@@ -1,0 +1,9 @@
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\bin\Debug\Vidonn4Geek.exe.config
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\bin\Debug\Vidonn4Geek.exe
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\bin\Debug\Vidonn4Geek.pdb
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Debug\Vidonn4Geek.Form1.resources
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Debug\Vidonn4Geek.Properties.Resources.resources
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Debug\Vidonn4Geek.csproj.GenerateResource.Cache
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Debug\Vidonn4Geek.exe
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Debug\Vidonn4Geek.pdb
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Debug\Vidonn4Geek.csprojResolveAssemblyReference.cache

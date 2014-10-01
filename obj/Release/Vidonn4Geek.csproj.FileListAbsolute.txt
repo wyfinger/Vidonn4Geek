@@ -1,0 +1,10 @@
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\bin\Release\Vidonn4Geek.exe.config
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\bin\Release\Vidonn4Geek.exe
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\bin\Release\Vidonn4Geek.pdb
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\bin\Release\System.Data.SQLite.dll
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.csprojResolveAssemblyReference.cache
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.Form1.resources
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.Properties.Resources.resources
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.csproj.GenerateResource.Cache
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.exe
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.pdb
