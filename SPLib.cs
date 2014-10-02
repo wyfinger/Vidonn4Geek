@@ -27,7 +27,7 @@ namespace ComLib
         public bool IsReciving;
         public string MyPortName = "";
         public string ReturnData = "";
-        private int WaitDelay = 1000; // TODO: изменить на 1000 в релизе !!!!
+        private int WaitDelay = 10000; // TODO: изменить на 1000 в релизе !!!!
 
         public SPLib()
         {
@@ -200,22 +200,23 @@ namespace ComLib
                 this.IsReciving = true;
                 while (Environment.TickCount - tickCount < 2 * this.WaitDelay && this.IsReciving)
                 {
-                    Application.DoEvents();  // TODO: не забыть переименовать строковые переменные во что-тот типа hh, yy !!!
+                    Application.DoEvents();  // TODO: не забыть переименовать строковые переменные во что-тот типа hh, yyyy !!!
                 }
                 string text = this.ReturnData.Trim();
-                string text2 = text.Substring(14, 2);
-                text2 = "20" + Convert.ToInt32(text2, 16).ToString();
-                string text3 = text.Substring(16, 2);
-                text3 = (1 + Convert.ToInt32(text3, 16)).ToString();
-                string text4 = text.Substring(18, 2);
-                text4 = (1 + Convert.ToInt32(text4, 16)).ToString();
-                string text5 = text.Substring(20, 2);
-                text5 = Convert.ToInt32(text5, 16).ToString();
-                string text6 = text.Substring(22, 2);
-                text6 = Convert.ToInt32(text6, 16).ToString();
-                string text7 = text.Substring(24, 2);
-                text7 = Convert.ToInt32(text7, 16).ToString();
-                result = string.Concat(new string[]  {text2, "-", text3, "-", text4, " ",text5, ":", text6, ":", text7});
+                string yyyy = text.Substring(14, 2);
+                yyyy = "00" + Convert.ToInt32(yyyy, 16).ToString();
+                yyyy = "20" + yyyy.Substring(yyyy.Length - 2, 2);    // года 4 значные
+                string MM = text.Substring(16, 2);
+                MM = (1 + Convert.ToInt32(MM, 16)).ToString();
+                string dd = text.Substring(18, 2);
+                dd = (1 + Convert.ToInt32(dd, 16)).ToString();
+                string hh = text.Substring(20, 2);
+                hh = Convert.ToInt32(hh, 16).ToString();
+                string mm = text.Substring(22, 2);
+                mm = Convert.ToInt32(mm, 16).ToString();
+                string ss = text.Substring(24, 2);
+                ss = Convert.ToInt32(ss, 16).ToString();
+                result = string.Concat(new string[]  {yyyy, "-", MM, "-", dd, " ",hh, ":", mm, ":", ss});
             }
             catch (Exception ex)
             {
@@ -479,8 +480,11 @@ namespace ComLib
             this.IsReciving = false;
         }
 
-        
-        private void Send(string Parameter3)
+        /// <summary>
+        ///     Отправить последовательность байтов в порт
+        /// </summary>
+        /// <param name="hexStr"></param>
+        private void Send(string hexStr)
         {
             try
             {
@@ -488,10 +492,10 @@ namespace ComLib
                 {
                     this.Open(this.MyPortName);
                 }
-                string text = Parameter3.Replace(" ", "");
+                string text = hexStr.Replace(" ", "");
                 new ArrayList();
                 int count = text.Length / 2;
-                byte[] buffer = this.HexStr2ByteArr(Parameter3);
+                byte[] buffer = this.HexStr2ByteArr(hexStr);
                 this.VSerialPort.Write(buffer, 0, count);
             }
             catch (Exception ex)
