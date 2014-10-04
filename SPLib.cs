@@ -504,8 +504,8 @@ namespace ComLib
             }
         }
 
-        
-        private string[,] getSptdata()
+
+        public string[,] getSptdata()
         {
             string[,] array = new string[168, 5];
             try
@@ -574,8 +574,11 @@ namespace ComLib
             return array;
         }
 
-        
-        private string[,] GetAlarmSet()
+        /// <summary>
+        ///     Получение информации по будильникам
+        /// </summary>
+        /// <returns></returns>
+        public string[,] GetAlarmSet()
         {
             string[,] array = new string[8, 11];
             try
@@ -673,7 +676,12 @@ namespace ComLib
             return array;
         }
         
-        private bool SetAlarmSet(string[,] Parameter4)
+        /// <summary>
+        ///     Запись информации по будильникам
+        /// </summary>
+        /// <param name="arrInput"></param>
+        /// <returns></returns>
+        public bool SetAlarmSet(string[,] arrInput)
         {
             bool result = false;
             try
@@ -686,21 +694,21 @@ namespace ComLib
                     string text = "";
                     for (int j = 1; j < 9; j++)
                     {
-                        text += Parameter4[i, j];
+                        text += arrInput[i, j];
                     }
                     text = Convert.ToInt32(text, 2).ToString("X");
                     text = ((text.Length < 2) ? ("0" + text) : text);
                     array[i] = text;
-                    string text2 = Convert.ToInt32(Parameter4[i, 9]).ToString("X");
+                    string text2 = Convert.ToInt32(arrInput[i, 9]).ToString("X");
                     text2 = ((text2.Length < 2) ? ("0" + text2) : text2);
                     array2[i] = text2;
-                    string text3 = Convert.ToInt32(Parameter4[i, 10]).ToString("X");
+                    string text3 = Convert.ToInt32(arrInput[i, 10]).ToString("X");
                     text3 = ((text3.Length < 2) ? ("0" + text3) : text3);
                     array3[i] = text3;
                 }
                 string text4 = string.Concat(new string[]
 {
-Parameter4[0, 0],
+arrInput[0, 0],
 " ",
 array[0],
 " ",
@@ -708,7 +716,7 @@ array2[0],
 " ",
 array3[0],
 " ",
-Parameter4[1, 0],
+arrInput[1, 0],
 " ",
 array[1],
 " ",
@@ -716,7 +724,7 @@ array2[1],
 " ",
 array3[1],
 " ",
-Parameter4[2, 0],
+arrInput[2, 0],
 " ",
 array[2],
 " ",
@@ -724,7 +732,7 @@ array2[2],
 " ",
 array3[2],
 " ",
-Parameter4[3, 0],
+arrInput[3, 0],
 " ",
 array[3],
 " ",
@@ -745,7 +753,7 @@ array3[3]
                 {
                     text4 = string.Concat(new string[]
 {
-Parameter4[4, 0],
+arrInput[4, 0],
 " ",
 array[4],
 " ",
@@ -753,7 +761,7 @@ array2[4],
 " ",
 array3[4],
 " ",
-Parameter4[5, 0],
+arrInput[5, 0],
 " ",
 array[5],
 " ",
@@ -761,7 +769,7 @@ array2[5],
 " ",
 array3[5],
 " ",
-Parameter4[6, 0],
+arrInput[6, 0],
 " ",
 array[6],
 " ",
@@ -769,7 +777,7 @@ array2[6],
 " ",
 array3[6],
 " ",
-Parameter4[7, 0],
+arrInput[7, 0],
 " ",
 array[7],
 " ",
@@ -799,8 +807,11 @@ array3[7]
             return result;
         }
 
-        
-        private string[,] GetOldAlarmSet()
+        /// <summary>
+        ///     Старая версия запроса информации по будильникам, похоже для firmware= 01
+        /// </summary>
+        /// <returns></returns>
+        public string[,] GetOldAlarmSet()
         {
             string[,] array = new string[16, 8];
             try

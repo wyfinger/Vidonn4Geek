@@ -20,8 +20,8 @@ namespace Vidonn4Geek
         private DateTime hostDateTime;    // время на компьютере в момент замера
         private bool devTimeIsReaded = false;
         private SPLib.PersonCfg personConfig;
-
         private Timer updateTimeTimer; 
+        private Control[,] arrAlarms;
 
         public Form1()
         {
@@ -30,10 +30,18 @@ namespace Vidonn4Geek
             updateTimeTimer.Interval = 500;
             updateTimeTimer.Enabled = true;
             updateTimeTimer.Tick += new EventHandler(this.OnTimeTimer);
-        }
 
-        private void groupBox5_Enter(object sender, EventArgs e)
-        {
+            // Объединяем в массив все компоненты для отображения будильников
+            arrAlarms = new Control[,] {
+                {cbAlarmEnable1, tbAlarmTime1, cbAlarm1Sun, cbAlarm1Mon, cbAlarm1Tue, cbAlarm1Wed, cbAlarm1Thu, cbAlarm1Fri, cbAlarm1Sat},
+                {cbAlarmEnable2, tbAlarmTime2, cbAlarm2Sun, cbAlarm2Mon, cbAlarm2Tue, cbAlarm2Wed, cbAlarm2Thu, cbAlarm2Fri, cbAlarm2Sat},
+                {cbAlarmEnable3, tbAlarmTime3, cbAlarm3Sun, cbAlarm3Mon, cbAlarm3Tue, cbAlarm3Wed, cbAlarm3Thu, cbAlarm3Fri, cbAlarm3Sat},
+                {cbAlarmEnable4, tbAlarmTime4, cbAlarm4Sun, cbAlarm4Mon, cbAlarm4Tue, cbAlarm4Wed, cbAlarm4Thu, cbAlarm4Fri, cbAlarm4Sat},
+                {cbAlarmEnable5, tbAlarmTime5, cbAlarm5Sun, cbAlarm5Mon, cbAlarm5Tue, cbAlarm5Wed, cbAlarm5Thu, cbAlarm5Fri, cbAlarm5Sat},
+                {cbAlarmEnable6, tbAlarmTime6, cbAlarm6Sun, cbAlarm6Mon, cbAlarm6Tue, cbAlarm6Wed, cbAlarm6Thu, cbAlarm6Fri, cbAlarm6Sat},
+                {cbAlarmEnable7, tbAlarmTime7, cbAlarm7Sun, cbAlarm7Mon, cbAlarm7Tue, cbAlarm7Wed, cbAlarm7Thu, cbAlarm7Fri, cbAlarm7Sat},
+                {cbAlarmEnable8, tbAlarmTime8, cbAlarm8Sun, cbAlarm8Mon, cbAlarm8Tue, cbAlarm8Wed, cbAlarm8Thu, cbAlarm8Fri, cbAlarm8Sat}
+            };
 
         }
 
@@ -120,8 +128,7 @@ namespace Vidonn4Geek
                 deviceDateTime = Convert.ToDateTime(devDateTime);
                 hostDateTime = DateTime.Now;
                 devTimeIsReaded = true;
-            }
-            
+            }            
 
             sPLib.Close();
         }
@@ -189,7 +196,7 @@ namespace Vidonn4Geek
             sPLib.MyPortName = cbDevList.Text;
 
             personConfig.weight = int.Parse(tbWeight.Text);
-            personConfig.height = int.Parse(tbWeight.Text);
+            personConfig.height = int.Parse(tbHeight.Text);
             personConfig.female = ((cbSex.SelectedIndex == 1) ? true : false);
             personConfig.age = int.Parse(tbAge.Text);
             personConfig.goal = int.Parse(tbGoal.Text);
@@ -201,5 +208,81 @@ namespace Vidonn4Geek
 
             sPLib.Close();
         }
+
+        // Вспомогательная функция для делания будильника активным/неактивным
+        private void setAlarmEnable(int alarmNo, bool enabled) 
+        {
+            for (int i = 1; i <= 8; i++)
+            {
+                arrAlarms[alarmNo, i].Enabled = enabled;
+            }
+        }
+
+        // Чтение информации по будильникам
+        private void button10_Click(object sender, EventArgs e)
+        {
+            // Все делаю только для GetAlarmSet, вероятно это относится к второй версии прошивки
+            SPLib sPLib = new SPLib();
+            sPLib.MyPortName = cbDevList.Text;
+            string[,] alarmSet = sPLib.GetAlarmSet();
+
+            for (int i = 0; i < 8; i++)
+            {
+                // Включен ли будильник
+                bool alarmEnableValue = alarmSet[i, 1] == "1" ? true : false;
+                ((CheckBox) arrAlarms[i, 0]).Checked = alarmEnableValue;
+                setAlarmEnable(i, alarmEnableValue);
+
+                // Время будильника
+                string hour = "00" + Convert.ToInt32(alarmSet[i, 9]);
+                hour = hour.Substring(hour.Length - 2, 2);
+                string min = "00" + Convert.ToInt32(alarmSet[i, 10]);
+                min = min.Substring(min.Length - 2, 2);
+
+                ((MaskedTextBox) arrAlarms[i, 1]).Text = hour + ":" + min;
+
+
+                // Дни недели
+                for (int j = 2; j <= 8; j++)
+                {
+                    bool alarmDayValue = alarmSet[i, j] == "1" ? true : false;
+                    ((CheckBox) arrAlarms[i, j]).Checked = alarmDayValue;
+                }
+            }
+            sPLib.Close();           
+        }
+
+        // Изменени состояния будильника
+        private void cbAlarmEnable_CheckedChanged(object sender, EventArgs e)
+        {
+            setAlarmEnable(int.Parse((string)((CheckBox)sender).Tag), ((CheckBox)sender).Checked);
+        }
+
+        // Сохранение будильников
+        private void button9_Click(object sender, EventArgs e)
+        {
+            string[,] arrValues = new string[8, 11];
+
+            for (int k = 0; k < 8; k++)
+            {
+                arrValues[k, 0] = "00";
+                arrValues[k, 1] = ((CheckBox)arrAlarms[k, 0]).Checked == true ? "1" : "0";  // Enable
+                arrValues[k, 2] = ((CheckBox)arrAlarms[k, 2]).Checked == true ? "1" : "0";  // San
+                arrValues[k, 3] = ((CheckBox)arrAlarms[k, 3]).Checked == true ? "1" : "0";  // Mon
+                arrValues[k, 4] = ((CheckBox)arrAlarms[k, 4]).Checked == true ? "1" : "0";  // Tue
+                arrValues[k, 5] = ((CheckBox)arrAlarms[k, 5]).Checked == true ? "1" : "0";  // Wed
+                arrValues[k, 6] = ((CheckBox)arrAlarms[k, 6]).Checked == true ? "1" : "0";  // Thu
+                arrValues[k, 7] = ((CheckBox)arrAlarms[k, 7]).Checked == true ? "1" : "0";  // Fri
+                arrValues[k, 8] = ((CheckBox)arrAlarms[k, 8]).Checked == true ? "1" : "0";  // Sat
+                arrValues[k, 9] = ((MaskedTextBox)arrAlarms[k, 1]).Text.Substring(0, 2);   // Hour
+                arrValues[k, 10] = ((MaskedTextBox)arrAlarms[k, 1]).Text.Substring(3, 2);   // Min
+            }
+ 
+            SPLib sPLib = new SPLib();
+            sPLib.MyPortName = cbDevList.Text;
+            sPLib.SetAlarmSet(arrValues);
+            sPLib.Close();
+        }
+
     }
 }

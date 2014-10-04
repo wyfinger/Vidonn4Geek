@@ -56,42 +56,107 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.tbTime = new System.Windows.Forms.MaskedTextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlAlarm1 = new System.Windows.Forms.Panel();
+            this.cbAlarm1Sat = new System.Windows.Forms.CheckBox();
+            this.cbAlarm1Fri = new System.Windows.Forms.CheckBox();
+            this.cbAlarm1Thu = new System.Windows.Forms.CheckBox();
+            this.cbAlarm1Wed = new System.Windows.Forms.CheckBox();
+            this.cbAlarm1Tue = new System.Windows.Forms.CheckBox();
+            this.cbAlarm1Mon = new System.Windows.Forms.CheckBox();
+            this.cbAlarm1Sun = new System.Windows.Forms.CheckBox();
+            this.tbAlarmTime1 = new System.Windows.Forms.MaskedTextBox();
+            this.cbAlarmEnable1 = new System.Windows.Forms.CheckBox();
+            this.pnlAlarm2 = new System.Windows.Forms.Panel();
+            this.cbAlarm2Sat = new System.Windows.Forms.CheckBox();
+            this.cbAlarm2Fri = new System.Windows.Forms.CheckBox();
+            this.cbAlarm2Thu = new System.Windows.Forms.CheckBox();
+            this.cbAlarm2Wed = new System.Windows.Forms.CheckBox();
+            this.cbAlarm2Tue = new System.Windows.Forms.CheckBox();
+            this.cbAlarm2Mon = new System.Windows.Forms.CheckBox();
+            this.cbAlarm2Sun = new System.Windows.Forms.CheckBox();
+            this.tbAlarmTime2 = new System.Windows.Forms.MaskedTextBox();
+            this.cbAlarmEnable2 = new System.Windows.Forms.CheckBox();
+            this.pnlAlarm3 = new System.Windows.Forms.Panel();
+            this.cbAlarm3Sat = new System.Windows.Forms.CheckBox();
+            this.cbAlarm3Fri = new System.Windows.Forms.CheckBox();
+            this.cbAlarm3Thu = new System.Windows.Forms.CheckBox();
+            this.cbAlarm3Wed = new System.Windows.Forms.CheckBox();
+            this.cbAlarm3Tue = new System.Windows.Forms.CheckBox();
+            this.cbAlarm3Mon = new System.Windows.Forms.CheckBox();
+            this.cbAlarm3Sun = new System.Windows.Forms.CheckBox();
+            this.tbAlarmTime3 = new System.Windows.Forms.MaskedTextBox();
+            this.cbAlarmEnable3 = new System.Windows.Forms.CheckBox();
+            this.pnlAlarm4 = new System.Windows.Forms.Panel();
+            this.cbAlarm4Sat = new System.Windows.Forms.CheckBox();
+            this.cbAlarm4Fri = new System.Windows.Forms.CheckBox();
+            this.cbAlarm4Thu = new System.Windows.Forms.CheckBox();
+            this.cbAlarm4Wed = new System.Windows.Forms.CheckBox();
+            this.cbAlarm4Tue = new System.Windows.Forms.CheckBox();
+            this.cbAlarm4Mon = new System.Windows.Forms.CheckBox();
+            this.cbAlarm4Sun = new System.Windows.Forms.CheckBox();
+            this.tbAlarmTime4 = new System.Windows.Forms.MaskedTextBox();
+            this.cbAlarmEnable4 = new System.Windows.Forms.CheckBox();
+            this.pnlAlarm5 = new System.Windows.Forms.Panel();
+            this.cbAlarm5Sat = new System.Windows.Forms.CheckBox();
+            this.cbAlarm5Fri = new System.Windows.Forms.CheckBox();
+            this.cbAlarm5Thu = new System.Windows.Forms.CheckBox();
+            this.cbAlarm5Wed = new System.Windows.Forms.CheckBox();
+            this.cbAlarm5Tue = new System.Windows.Forms.CheckBox();
+            this.cbAlarm5Mon = new System.Windows.Forms.CheckBox();
+            this.cbAlarm5Sun = new System.Windows.Forms.CheckBox();
+            this.tbAlarmTime5 = new System.Windows.Forms.MaskedTextBox();
+            this.cbAlarmEnable5 = new System.Windows.Forms.CheckBox();
+            this.pnlAlarm6 = new System.Windows.Forms.Panel();
+            this.cbAlarm6Sat = new System.Windows.Forms.CheckBox();
+            this.cbAlarm6Fri = new System.Windows.Forms.CheckBox();
+            this.cbAlarm6Thu = new System.Windows.Forms.CheckBox();
+            this.cbAlarm6Wed = new System.Windows.Forms.CheckBox();
+            this.cbAlarm6Tue = new System.Windows.Forms.CheckBox();
+            this.cbAlarm6Mon = new System.Windows.Forms.CheckBox();
+            this.cbAlarm6Sun = new System.Windows.Forms.CheckBox();
+            this.tbAlarmTime6 = new System.Windows.Forms.MaskedTextBox();
+            this.cbAlarmEnable6 = new System.Windows.Forms.CheckBox();
+            this.pnlAlarm7 = new System.Windows.Forms.Panel();
+            this.cbAlarm7Sat = new System.Windows.Forms.CheckBox();
+            this.cbAlarm7Fri = new System.Windows.Forms.CheckBox();
+            this.cbAlarm7Thu = new System.Windows.Forms.CheckBox();
+            this.cbAlarm7Wed = new System.Windows.Forms.CheckBox();
+            this.cbAlarm7Tue = new System.Windows.Forms.CheckBox();
+            this.cbAlarm7Mon = new System.Windows.Forms.CheckBox();
+            this.cbAlarm7Sun = new System.Windows.Forms.CheckBox();
+            this.tbAlarmTime7 = new System.Windows.Forms.MaskedTextBox();
+            this.cbAlarmEnable7 = new System.Windows.Forms.CheckBox();
+            this.pnlAlarm8 = new System.Windows.Forms.Panel();
+            this.cbAlarm8Sat = new System.Windows.Forms.CheckBox();
+            this.cbAlarm8Fri = new System.Windows.Forms.CheckBox();
+            this.cbAlarm8Thu = new System.Windows.Forms.CheckBox();
+            this.cbAlarm8Wed = new System.Windows.Forms.CheckBox();
+            this.cbAlarm8Tue = new System.Windows.Forms.CheckBox();
+            this.cbAlarm8Mon = new System.Windows.Forms.CheckBox();
+            this.cbAlarm8Sun = new System.Windows.Forms.CheckBox();
+            this.tbAlarmTime8 = new System.Windows.Forms.MaskedTextBox();
+            this.cbAlarmEnable8 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.pnlAlarm1.SuspendLayout();
+            this.pnlAlarm2.SuspendLayout();
+            this.pnlAlarm3.SuspendLayout();
+            this.pnlAlarm4.SuspendLayout();
+            this.pnlAlarm5.SuspendLayout();
+            this.pnlAlarm6.SuspendLayout();
+            this.pnlAlarm7.SuspendLayout();
+            this.pnlAlarm8.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -342,7 +407,7 @@
             this.groupBox3.Size = new System.Drawing.Size(402, 83);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Time";
+            this.groupBox3.Text = "Date && Time";
             // 
             // button1
             // 
@@ -383,343 +448,8 @@
             this.tbTime.TabIndex = 0;
             this.tbTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.button6);
-            this.groupBox4.Controls.Add(this.button7);
-            this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.maskedTextBox6);
-            this.groupBox4.Controls.Add(this.comboBox7);
-            this.groupBox4.Controls.Add(this.label17);
-            this.groupBox4.Controls.Add(this.maskedTextBox7);
-            this.groupBox4.Controls.Add(this.comboBox8);
-            this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Controls.Add(this.maskedTextBox8);
-            this.groupBox4.Controls.Add(this.comboBox9);
-            this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.maskedTextBox9);
-            this.groupBox4.Controls.Add(this.comboBox10);
-            this.groupBox4.Controls.Add(this.label15);
-            this.groupBox4.Controls.Add(this.maskedTextBox5);
-            this.groupBox4.Controls.Add(this.comboBox6);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.maskedTextBox4);
-            this.groupBox4.Controls.Add(this.comboBox5);
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.maskedTextBox3);
-            this.groupBox4.Controls.Add(this.comboBox4);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.maskedTextBox2);
-            this.groupBox4.Controls.Add(this.comboBox3);
-            this.groupBox4.Enabled = false;
-            this.groupBox4.Location = new System.Drawing.Point(420, 12);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(402, 135);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Alarms";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(287, 44);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(105, 23);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "Write";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(287, 15);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(105, 23);
-            this.button7.TabIndex = 25;
-            this.button7.Text = "Read";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(155, 107);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(20, 13);
-            this.label16.TabIndex = 24;
-            this.label16.Text = "#8";
-            // 
-            // maskedTextBox6
-            // 
-            this.maskedTextBox6.Location = new System.Drawing.Point(231, 100);
-            this.maskedTextBox6.Mask = "00:00";
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(50, 20);
-            this.maskedTextBox6.TabIndex = 23;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "",
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat"});
-            this.comboBox7.Location = new System.Drawing.Point(181, 101);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(44, 21);
-            this.comboBox7.TabIndex = 22;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(155, 80);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(20, 13);
-            this.label17.TabIndex = 21;
-            this.label17.Text = "#7";
-            // 
-            // maskedTextBox7
-            // 
-            this.maskedTextBox7.Location = new System.Drawing.Point(231, 73);
-            this.maskedTextBox7.Mask = "00:00";
-            this.maskedTextBox7.Name = "maskedTextBox7";
-            this.maskedTextBox7.Size = new System.Drawing.Size(50, 20);
-            this.maskedTextBox7.TabIndex = 20;
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
-            "",
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat"});
-            this.comboBox8.Location = new System.Drawing.Point(181, 74);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(44, 21);
-            this.comboBox8.TabIndex = 19;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(155, 53);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(20, 13);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "#6";
-            // 
-            // maskedTextBox8
-            // 
-            this.maskedTextBox8.Location = new System.Drawing.Point(231, 46);
-            this.maskedTextBox8.Mask = "00:00";
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            this.maskedTextBox8.Size = new System.Drawing.Size(50, 20);
-            this.maskedTextBox8.TabIndex = 17;
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
-            "",
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat"});
-            this.comboBox9.Location = new System.Drawing.Point(181, 47);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(44, 21);
-            this.comboBox9.TabIndex = 16;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(155, 25);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(20, 13);
-            this.label19.TabIndex = 15;
-            this.label19.Text = "#5";
-            // 
-            // maskedTextBox9
-            // 
-            this.maskedTextBox9.Location = new System.Drawing.Point(231, 18);
-            this.maskedTextBox9.Mask = "00:00";
-            this.maskedTextBox9.Name = "maskedTextBox9";
-            this.maskedTextBox9.Size = new System.Drawing.Size(50, 20);
-            this.maskedTextBox9.TabIndex = 14;
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
-            "",
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat"});
-            this.comboBox10.Location = new System.Drawing.Point(181, 19);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(44, 21);
-            this.comboBox10.TabIndex = 13;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(13, 111);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(20, 13);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "#4";
-            // 
-            // maskedTextBox5
-            // 
-            this.maskedTextBox5.Location = new System.Drawing.Point(89, 104);
-            this.maskedTextBox5.Mask = "00:00";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(50, 20);
-            this.maskedTextBox5.TabIndex = 11;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "",
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat"});
-            this.comboBox6.Location = new System.Drawing.Point(39, 105);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(44, 21);
-            this.comboBox6.TabIndex = 10;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 84);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(20, 13);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "#3";
-            // 
-            // maskedTextBox4
-            // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(89, 77);
-            this.maskedTextBox4.Mask = "00:00";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(50, 20);
-            this.maskedTextBox4.TabIndex = 8;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "",
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat"});
-            this.comboBox5.Location = new System.Drawing.Point(39, 78);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(44, 21);
-            this.comboBox5.TabIndex = 7;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 57);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(20, 13);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "#2";
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(89, 50);
-            this.maskedTextBox3.Mask = "00:00";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(50, 20);
-            this.maskedTextBox3.TabIndex = 5;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "",
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat"});
-            this.comboBox4.Location = new System.Drawing.Point(39, 51);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(44, 21);
-            this.comboBox4.TabIndex = 4;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 29);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(20, 13);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "#1";
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(89, 22);
-            this.maskedTextBox2.Mask = "00:00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(50, 20);
-            this.maskedTextBox2.TabIndex = 2;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "",
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat"});
-            this.comboBox3.Location = new System.Drawing.Point(39, 23);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(44, 21);
-            this.comboBox3.TabIndex = 0;
-            // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.comboBox1);
             this.groupBox5.Controls.Add(this.textBox5);
             this.groupBox5.Controls.Add(this.button8);
             this.groupBox5.Enabled = false;
@@ -729,16 +459,6 @@
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Sport Data";
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(24, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(134, 21);
-            this.comboBox1.TabIndex = 28;
             // 
             // textBox5
             // 
@@ -757,13 +477,960 @@
             this.button8.Text = "Read";
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(287, 15);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(105, 23);
+            this.button10.TabIndex = 25;
+            this.button10.Text = "Read";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(287, 44);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(105, 23);
+            this.button9.TabIndex = 26;
+            this.button9.Tag = "";
+            this.button9.Text = "Write";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.flowLayoutPanel1);
+            this.groupBox6.Controls.Add(this.button9);
+            this.groupBox6.Controls.Add(this.button10);
+            this.groupBox6.Location = new System.Drawing.Point(420, 14);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(402, 135);
+            this.groupBox6.TabIndex = 5;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Alarms";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel1.Controls.Add(this.pnlAlarm1);
+            this.flowLayoutPanel1.Controls.Add(this.pnlAlarm2);
+            this.flowLayoutPanel1.Controls.Add(this.pnlAlarm3);
+            this.flowLayoutPanel1.Controls.Add(this.pnlAlarm4);
+            this.flowLayoutPanel1.Controls.Add(this.pnlAlarm5);
+            this.flowLayoutPanel1.Controls.Add(this.pnlAlarm6);
+            this.flowLayoutPanel1.Controls.Add(this.pnlAlarm7);
+            this.flowLayoutPanel1.Controls.Add(this.pnlAlarm8);
+            this.flowLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 19);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(275, 110);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // pnlAlarm1
+            // 
+            this.pnlAlarm1.AccessibleName = "";
+            this.pnlAlarm1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlAlarm1.Controls.Add(this.cbAlarm1Sat);
+            this.pnlAlarm1.Controls.Add(this.cbAlarm1Fri);
+            this.pnlAlarm1.Controls.Add(this.cbAlarm1Thu);
+            this.pnlAlarm1.Controls.Add(this.cbAlarm1Wed);
+            this.pnlAlarm1.Controls.Add(this.cbAlarm1Tue);
+            this.pnlAlarm1.Controls.Add(this.cbAlarm1Mon);
+            this.pnlAlarm1.Controls.Add(this.cbAlarm1Sun);
+            this.pnlAlarm1.Controls.Add(this.tbAlarmTime1);
+            this.pnlAlarm1.Controls.Add(this.cbAlarmEnable1);
+            this.pnlAlarm1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlarm1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlAlarm1.Location = new System.Drawing.Point(0, 0);
+            this.pnlAlarm1.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAlarm1.Name = "pnlAlarm1";
+            this.pnlAlarm1.Size = new System.Drawing.Size(250, 30);
+            this.pnlAlarm1.TabIndex = 0;
+            // 
+            // cbAlarm1Sat
+            // 
+            this.cbAlarm1Sat.AutoSize = true;
+            this.cbAlarm1Sat.Enabled = false;
+            this.cbAlarm1Sat.Location = new System.Drawing.Point(222, 8);
+            this.cbAlarm1Sat.Name = "cbAlarm1Sat";
+            this.cbAlarm1Sat.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm1Sat.TabIndex = 10;
+            this.cbAlarm1Sat.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm1Fri
+            // 
+            this.cbAlarm1Fri.AutoSize = true;
+            this.cbAlarm1Fri.Enabled = false;
+            this.cbAlarm1Fri.Location = new System.Drawing.Point(201, 8);
+            this.cbAlarm1Fri.Name = "cbAlarm1Fri";
+            this.cbAlarm1Fri.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm1Fri.TabIndex = 9;
+            this.cbAlarm1Fri.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm1Thu
+            // 
+            this.cbAlarm1Thu.AutoSize = true;
+            this.cbAlarm1Thu.Enabled = false;
+            this.cbAlarm1Thu.Location = new System.Drawing.Point(183, 8);
+            this.cbAlarm1Thu.Name = "cbAlarm1Thu";
+            this.cbAlarm1Thu.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm1Thu.TabIndex = 8;
+            this.cbAlarm1Thu.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm1Wed
+            // 
+            this.cbAlarm1Wed.AutoSize = true;
+            this.cbAlarm1Wed.Enabled = false;
+            this.cbAlarm1Wed.Location = new System.Drawing.Point(162, 8);
+            this.cbAlarm1Wed.Name = "cbAlarm1Wed";
+            this.cbAlarm1Wed.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm1Wed.TabIndex = 7;
+            this.cbAlarm1Wed.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm1Tue
+            // 
+            this.cbAlarm1Tue.AutoSize = true;
+            this.cbAlarm1Tue.Enabled = false;
+            this.cbAlarm1Tue.Location = new System.Drawing.Point(141, 8);
+            this.cbAlarm1Tue.Name = "cbAlarm1Tue";
+            this.cbAlarm1Tue.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm1Tue.TabIndex = 6;
+            this.cbAlarm1Tue.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm1Mon
+            // 
+            this.cbAlarm1Mon.AutoSize = true;
+            this.cbAlarm1Mon.Enabled = false;
+            this.cbAlarm1Mon.Location = new System.Drawing.Point(121, 8);
+            this.cbAlarm1Mon.Name = "cbAlarm1Mon";
+            this.cbAlarm1Mon.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm1Mon.TabIndex = 5;
+            this.cbAlarm1Mon.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm1Sun
+            // 
+            this.cbAlarm1Sun.AutoSize = true;
+            this.cbAlarm1Sun.Enabled = false;
+            this.cbAlarm1Sun.Location = new System.Drawing.Point(100, 8);
+            this.cbAlarm1Sun.Name = "cbAlarm1Sun";
+            this.cbAlarm1Sun.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm1Sun.TabIndex = 4;
+            this.cbAlarm1Sun.UseVisualStyleBackColor = true;
+            // 
+            // tbAlarmTime1
+            // 
+            this.tbAlarmTime1.Enabled = false;
+            this.tbAlarmTime1.Location = new System.Drawing.Point(30, 5);
+            this.tbAlarmTime1.Mask = "00:00";
+            this.tbAlarmTime1.Name = "tbAlarmTime1";
+            this.tbAlarmTime1.Size = new System.Drawing.Size(50, 20);
+            this.tbAlarmTime1.TabIndex = 3;
+            this.tbAlarmTime1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cbAlarmEnable1
+            // 
+            this.cbAlarmEnable1.AutoSize = true;
+            this.cbAlarmEnable1.Location = new System.Drawing.Point(7, 8);
+            this.cbAlarmEnable1.Name = "cbAlarmEnable1";
+            this.cbAlarmEnable1.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarmEnable1.TabIndex = 0;
+            this.cbAlarmEnable1.Tag = "0";
+            this.cbAlarmEnable1.UseVisualStyleBackColor = true;
+            this.cbAlarmEnable1.CheckedChanged += new System.EventHandler(this.cbAlarmEnable_CheckedChanged);
+            // 
+            // pnlAlarm2
+            // 
+            this.pnlAlarm2.AccessibleName = "";
+            this.pnlAlarm2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlAlarm2.Controls.Add(this.cbAlarm2Sat);
+            this.pnlAlarm2.Controls.Add(this.cbAlarm2Fri);
+            this.pnlAlarm2.Controls.Add(this.cbAlarm2Thu);
+            this.pnlAlarm2.Controls.Add(this.cbAlarm2Wed);
+            this.pnlAlarm2.Controls.Add(this.cbAlarm2Tue);
+            this.pnlAlarm2.Controls.Add(this.cbAlarm2Mon);
+            this.pnlAlarm2.Controls.Add(this.cbAlarm2Sun);
+            this.pnlAlarm2.Controls.Add(this.tbAlarmTime2);
+            this.pnlAlarm2.Controls.Add(this.cbAlarmEnable2);
+            this.pnlAlarm2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlarm2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlAlarm2.Location = new System.Drawing.Point(0, 30);
+            this.pnlAlarm2.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAlarm2.Name = "pnlAlarm2";
+            this.pnlAlarm2.Size = new System.Drawing.Size(250, 30);
+            this.pnlAlarm2.TabIndex = 1;
+            // 
+            // cbAlarm2Sat
+            // 
+            this.cbAlarm2Sat.AutoSize = true;
+            this.cbAlarm2Sat.Enabled = false;
+            this.cbAlarm2Sat.Location = new System.Drawing.Point(222, 8);
+            this.cbAlarm2Sat.Name = "cbAlarm2Sat";
+            this.cbAlarm2Sat.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm2Sat.TabIndex = 10;
+            this.cbAlarm2Sat.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm2Fri
+            // 
+            this.cbAlarm2Fri.AutoSize = true;
+            this.cbAlarm2Fri.Enabled = false;
+            this.cbAlarm2Fri.Location = new System.Drawing.Point(201, 8);
+            this.cbAlarm2Fri.Name = "cbAlarm2Fri";
+            this.cbAlarm2Fri.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm2Fri.TabIndex = 9;
+            this.cbAlarm2Fri.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm2Thu
+            // 
+            this.cbAlarm2Thu.AutoSize = true;
+            this.cbAlarm2Thu.Enabled = false;
+            this.cbAlarm2Thu.Location = new System.Drawing.Point(183, 8);
+            this.cbAlarm2Thu.Name = "cbAlarm2Thu";
+            this.cbAlarm2Thu.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm2Thu.TabIndex = 8;
+            this.cbAlarm2Thu.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm2Wed
+            // 
+            this.cbAlarm2Wed.AutoSize = true;
+            this.cbAlarm2Wed.Enabled = false;
+            this.cbAlarm2Wed.Location = new System.Drawing.Point(162, 8);
+            this.cbAlarm2Wed.Name = "cbAlarm2Wed";
+            this.cbAlarm2Wed.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm2Wed.TabIndex = 7;
+            this.cbAlarm2Wed.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm2Tue
+            // 
+            this.cbAlarm2Tue.AutoSize = true;
+            this.cbAlarm2Tue.Enabled = false;
+            this.cbAlarm2Tue.Location = new System.Drawing.Point(141, 8);
+            this.cbAlarm2Tue.Name = "cbAlarm2Tue";
+            this.cbAlarm2Tue.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm2Tue.TabIndex = 6;
+            this.cbAlarm2Tue.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm2Mon
+            // 
+            this.cbAlarm2Mon.AutoSize = true;
+            this.cbAlarm2Mon.Enabled = false;
+            this.cbAlarm2Mon.Location = new System.Drawing.Point(121, 8);
+            this.cbAlarm2Mon.Name = "cbAlarm2Mon";
+            this.cbAlarm2Mon.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm2Mon.TabIndex = 5;
+            this.cbAlarm2Mon.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm2Sun
+            // 
+            this.cbAlarm2Sun.AutoSize = true;
+            this.cbAlarm2Sun.Enabled = false;
+            this.cbAlarm2Sun.Location = new System.Drawing.Point(100, 8);
+            this.cbAlarm2Sun.Name = "cbAlarm2Sun";
+            this.cbAlarm2Sun.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm2Sun.TabIndex = 4;
+            this.cbAlarm2Sun.UseVisualStyleBackColor = true;
+            // 
+            // tbAlarmTime2
+            // 
+            this.tbAlarmTime2.Enabled = false;
+            this.tbAlarmTime2.Location = new System.Drawing.Point(30, 5);
+            this.tbAlarmTime2.Mask = "00:00";
+            this.tbAlarmTime2.Name = "tbAlarmTime2";
+            this.tbAlarmTime2.Size = new System.Drawing.Size(50, 20);
+            this.tbAlarmTime2.TabIndex = 3;
+            this.tbAlarmTime2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cbAlarmEnable2
+            // 
+            this.cbAlarmEnable2.AutoSize = true;
+            this.cbAlarmEnable2.Location = new System.Drawing.Point(7, 8);
+            this.cbAlarmEnable2.Name = "cbAlarmEnable2";
+            this.cbAlarmEnable2.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarmEnable2.TabIndex = 0;
+            this.cbAlarmEnable2.Tag = "1";
+            this.cbAlarmEnable2.UseVisualStyleBackColor = true;
+            this.cbAlarmEnable2.CheckedChanged += new System.EventHandler(this.cbAlarmEnable_CheckedChanged);
+            // 
+            // pnlAlarm3
+            // 
+            this.pnlAlarm3.AccessibleName = "";
+            this.pnlAlarm3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlAlarm3.Controls.Add(this.cbAlarm3Sat);
+            this.pnlAlarm3.Controls.Add(this.cbAlarm3Fri);
+            this.pnlAlarm3.Controls.Add(this.cbAlarm3Thu);
+            this.pnlAlarm3.Controls.Add(this.cbAlarm3Wed);
+            this.pnlAlarm3.Controls.Add(this.cbAlarm3Tue);
+            this.pnlAlarm3.Controls.Add(this.cbAlarm3Mon);
+            this.pnlAlarm3.Controls.Add(this.cbAlarm3Sun);
+            this.pnlAlarm3.Controls.Add(this.tbAlarmTime3);
+            this.pnlAlarm3.Controls.Add(this.cbAlarmEnable3);
+            this.pnlAlarm3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlarm3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlAlarm3.Location = new System.Drawing.Point(0, 60);
+            this.pnlAlarm3.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAlarm3.Name = "pnlAlarm3";
+            this.pnlAlarm3.Size = new System.Drawing.Size(250, 30);
+            this.pnlAlarm3.TabIndex = 2;
+            // 
+            // cbAlarm3Sat
+            // 
+            this.cbAlarm3Sat.AutoSize = true;
+            this.cbAlarm3Sat.Enabled = false;
+            this.cbAlarm3Sat.Location = new System.Drawing.Point(222, 8);
+            this.cbAlarm3Sat.Name = "cbAlarm3Sat";
+            this.cbAlarm3Sat.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm3Sat.TabIndex = 10;
+            this.cbAlarm3Sat.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm3Fri
+            // 
+            this.cbAlarm3Fri.AutoSize = true;
+            this.cbAlarm3Fri.Enabled = false;
+            this.cbAlarm3Fri.Location = new System.Drawing.Point(201, 8);
+            this.cbAlarm3Fri.Name = "cbAlarm3Fri";
+            this.cbAlarm3Fri.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm3Fri.TabIndex = 9;
+            this.cbAlarm3Fri.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm3Thu
+            // 
+            this.cbAlarm3Thu.AutoSize = true;
+            this.cbAlarm3Thu.Enabled = false;
+            this.cbAlarm3Thu.Location = new System.Drawing.Point(183, 8);
+            this.cbAlarm3Thu.Name = "cbAlarm3Thu";
+            this.cbAlarm3Thu.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm3Thu.TabIndex = 8;
+            this.cbAlarm3Thu.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm3Wed
+            // 
+            this.cbAlarm3Wed.AutoSize = true;
+            this.cbAlarm3Wed.Enabled = false;
+            this.cbAlarm3Wed.Location = new System.Drawing.Point(162, 8);
+            this.cbAlarm3Wed.Name = "cbAlarm3Wed";
+            this.cbAlarm3Wed.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm3Wed.TabIndex = 7;
+            this.cbAlarm3Wed.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm3Tue
+            // 
+            this.cbAlarm3Tue.AutoSize = true;
+            this.cbAlarm3Tue.Enabled = false;
+            this.cbAlarm3Tue.Location = new System.Drawing.Point(141, 8);
+            this.cbAlarm3Tue.Name = "cbAlarm3Tue";
+            this.cbAlarm3Tue.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm3Tue.TabIndex = 6;
+            this.cbAlarm3Tue.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm3Mon
+            // 
+            this.cbAlarm3Mon.AutoSize = true;
+            this.cbAlarm3Mon.Enabled = false;
+            this.cbAlarm3Mon.Location = new System.Drawing.Point(121, 8);
+            this.cbAlarm3Mon.Name = "cbAlarm3Mon";
+            this.cbAlarm3Mon.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm3Mon.TabIndex = 5;
+            this.cbAlarm3Mon.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm3Sun
+            // 
+            this.cbAlarm3Sun.AutoSize = true;
+            this.cbAlarm3Sun.Enabled = false;
+            this.cbAlarm3Sun.Location = new System.Drawing.Point(100, 8);
+            this.cbAlarm3Sun.Name = "cbAlarm3Sun";
+            this.cbAlarm3Sun.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm3Sun.TabIndex = 4;
+            this.cbAlarm3Sun.UseVisualStyleBackColor = true;
+            // 
+            // tbAlarmTime3
+            // 
+            this.tbAlarmTime3.Enabled = false;
+            this.tbAlarmTime3.Location = new System.Drawing.Point(30, 5);
+            this.tbAlarmTime3.Mask = "00:00";
+            this.tbAlarmTime3.Name = "tbAlarmTime3";
+            this.tbAlarmTime3.Size = new System.Drawing.Size(50, 20);
+            this.tbAlarmTime3.TabIndex = 3;
+            this.tbAlarmTime3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cbAlarmEnable3
+            // 
+            this.cbAlarmEnable3.AutoSize = true;
+            this.cbAlarmEnable3.Location = new System.Drawing.Point(7, 8);
+            this.cbAlarmEnable3.Name = "cbAlarmEnable3";
+            this.cbAlarmEnable3.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarmEnable3.TabIndex = 0;
+            this.cbAlarmEnable3.Tag = "2";
+            this.cbAlarmEnable3.UseVisualStyleBackColor = true;
+            this.cbAlarmEnable3.CheckedChanged += new System.EventHandler(this.cbAlarmEnable_CheckedChanged);
+            // 
+            // pnlAlarm4
+            // 
+            this.pnlAlarm4.AccessibleName = "";
+            this.pnlAlarm4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlAlarm4.Controls.Add(this.cbAlarm4Sat);
+            this.pnlAlarm4.Controls.Add(this.cbAlarm4Fri);
+            this.pnlAlarm4.Controls.Add(this.cbAlarm4Thu);
+            this.pnlAlarm4.Controls.Add(this.cbAlarm4Wed);
+            this.pnlAlarm4.Controls.Add(this.cbAlarm4Tue);
+            this.pnlAlarm4.Controls.Add(this.cbAlarm4Mon);
+            this.pnlAlarm4.Controls.Add(this.cbAlarm4Sun);
+            this.pnlAlarm4.Controls.Add(this.tbAlarmTime4);
+            this.pnlAlarm4.Controls.Add(this.cbAlarmEnable4);
+            this.pnlAlarm4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlarm4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlAlarm4.Location = new System.Drawing.Point(0, 90);
+            this.pnlAlarm4.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAlarm4.Name = "pnlAlarm4";
+            this.pnlAlarm4.Size = new System.Drawing.Size(250, 30);
+            this.pnlAlarm4.TabIndex = 3;
+            // 
+            // cbAlarm4Sat
+            // 
+            this.cbAlarm4Sat.AutoSize = true;
+            this.cbAlarm4Sat.Enabled = false;
+            this.cbAlarm4Sat.Location = new System.Drawing.Point(222, 8);
+            this.cbAlarm4Sat.Name = "cbAlarm4Sat";
+            this.cbAlarm4Sat.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm4Sat.TabIndex = 10;
+            this.cbAlarm4Sat.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm4Fri
+            // 
+            this.cbAlarm4Fri.AutoSize = true;
+            this.cbAlarm4Fri.Enabled = false;
+            this.cbAlarm4Fri.Location = new System.Drawing.Point(201, 8);
+            this.cbAlarm4Fri.Name = "cbAlarm4Fri";
+            this.cbAlarm4Fri.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm4Fri.TabIndex = 9;
+            this.cbAlarm4Fri.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm4Thu
+            // 
+            this.cbAlarm4Thu.AutoSize = true;
+            this.cbAlarm4Thu.Enabled = false;
+            this.cbAlarm4Thu.Location = new System.Drawing.Point(183, 8);
+            this.cbAlarm4Thu.Name = "cbAlarm4Thu";
+            this.cbAlarm4Thu.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm4Thu.TabIndex = 8;
+            this.cbAlarm4Thu.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm4Wed
+            // 
+            this.cbAlarm4Wed.AutoSize = true;
+            this.cbAlarm4Wed.Enabled = false;
+            this.cbAlarm4Wed.Location = new System.Drawing.Point(162, 8);
+            this.cbAlarm4Wed.Name = "cbAlarm4Wed";
+            this.cbAlarm4Wed.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm4Wed.TabIndex = 7;
+            this.cbAlarm4Wed.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm4Tue
+            // 
+            this.cbAlarm4Tue.AutoSize = true;
+            this.cbAlarm4Tue.Enabled = false;
+            this.cbAlarm4Tue.Location = new System.Drawing.Point(141, 8);
+            this.cbAlarm4Tue.Name = "cbAlarm4Tue";
+            this.cbAlarm4Tue.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm4Tue.TabIndex = 6;
+            this.cbAlarm4Tue.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm4Mon
+            // 
+            this.cbAlarm4Mon.AutoSize = true;
+            this.cbAlarm4Mon.Enabled = false;
+            this.cbAlarm4Mon.Location = new System.Drawing.Point(121, 8);
+            this.cbAlarm4Mon.Name = "cbAlarm4Mon";
+            this.cbAlarm4Mon.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm4Mon.TabIndex = 5;
+            this.cbAlarm4Mon.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm4Sun
+            // 
+            this.cbAlarm4Sun.AutoSize = true;
+            this.cbAlarm4Sun.Enabled = false;
+            this.cbAlarm4Sun.Location = new System.Drawing.Point(100, 8);
+            this.cbAlarm4Sun.Name = "cbAlarm4Sun";
+            this.cbAlarm4Sun.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm4Sun.TabIndex = 4;
+            this.cbAlarm4Sun.UseVisualStyleBackColor = true;
+            // 
+            // tbAlarmTime4
+            // 
+            this.tbAlarmTime4.Enabled = false;
+            this.tbAlarmTime4.Location = new System.Drawing.Point(30, 5);
+            this.tbAlarmTime4.Mask = "00:00";
+            this.tbAlarmTime4.Name = "tbAlarmTime4";
+            this.tbAlarmTime4.Size = new System.Drawing.Size(50, 20);
+            this.tbAlarmTime4.TabIndex = 3;
+            this.tbAlarmTime4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cbAlarmEnable4
+            // 
+            this.cbAlarmEnable4.AutoSize = true;
+            this.cbAlarmEnable4.Location = new System.Drawing.Point(7, 8);
+            this.cbAlarmEnable4.Name = "cbAlarmEnable4";
+            this.cbAlarmEnable4.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarmEnable4.TabIndex = 0;
+            this.cbAlarmEnable4.Tag = "3";
+            this.cbAlarmEnable4.UseVisualStyleBackColor = true;
+            this.cbAlarmEnable4.CheckedChanged += new System.EventHandler(this.cbAlarmEnable_CheckedChanged);
+            // 
+            // pnlAlarm5
+            // 
+            this.pnlAlarm5.AccessibleName = "";
+            this.pnlAlarm5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlAlarm5.Controls.Add(this.cbAlarm5Sat);
+            this.pnlAlarm5.Controls.Add(this.cbAlarm5Fri);
+            this.pnlAlarm5.Controls.Add(this.cbAlarm5Thu);
+            this.pnlAlarm5.Controls.Add(this.cbAlarm5Wed);
+            this.pnlAlarm5.Controls.Add(this.cbAlarm5Tue);
+            this.pnlAlarm5.Controls.Add(this.cbAlarm5Mon);
+            this.pnlAlarm5.Controls.Add(this.cbAlarm5Sun);
+            this.pnlAlarm5.Controls.Add(this.tbAlarmTime5);
+            this.pnlAlarm5.Controls.Add(this.cbAlarmEnable5);
+            this.pnlAlarm5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlarm5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlAlarm5.Location = new System.Drawing.Point(0, 120);
+            this.pnlAlarm5.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAlarm5.Name = "pnlAlarm5";
+            this.pnlAlarm5.Size = new System.Drawing.Size(250, 30);
+            this.pnlAlarm5.TabIndex = 4;
+            // 
+            // cbAlarm5Sat
+            // 
+            this.cbAlarm5Sat.AutoSize = true;
+            this.cbAlarm5Sat.Enabled = false;
+            this.cbAlarm5Sat.Location = new System.Drawing.Point(222, 8);
+            this.cbAlarm5Sat.Name = "cbAlarm5Sat";
+            this.cbAlarm5Sat.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm5Sat.TabIndex = 10;
+            this.cbAlarm5Sat.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm5Fri
+            // 
+            this.cbAlarm5Fri.AutoSize = true;
+            this.cbAlarm5Fri.Enabled = false;
+            this.cbAlarm5Fri.Location = new System.Drawing.Point(201, 8);
+            this.cbAlarm5Fri.Name = "cbAlarm5Fri";
+            this.cbAlarm5Fri.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm5Fri.TabIndex = 9;
+            this.cbAlarm5Fri.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm5Thu
+            // 
+            this.cbAlarm5Thu.AutoSize = true;
+            this.cbAlarm5Thu.Enabled = false;
+            this.cbAlarm5Thu.Location = new System.Drawing.Point(183, 8);
+            this.cbAlarm5Thu.Name = "cbAlarm5Thu";
+            this.cbAlarm5Thu.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm5Thu.TabIndex = 8;
+            this.cbAlarm5Thu.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm5Wed
+            // 
+            this.cbAlarm5Wed.AutoSize = true;
+            this.cbAlarm5Wed.Enabled = false;
+            this.cbAlarm5Wed.Location = new System.Drawing.Point(162, 8);
+            this.cbAlarm5Wed.Name = "cbAlarm5Wed";
+            this.cbAlarm5Wed.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm5Wed.TabIndex = 7;
+            this.cbAlarm5Wed.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm5Tue
+            // 
+            this.cbAlarm5Tue.AutoSize = true;
+            this.cbAlarm5Tue.Enabled = false;
+            this.cbAlarm5Tue.Location = new System.Drawing.Point(141, 8);
+            this.cbAlarm5Tue.Name = "cbAlarm5Tue";
+            this.cbAlarm5Tue.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm5Tue.TabIndex = 6;
+            this.cbAlarm5Tue.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm5Mon
+            // 
+            this.cbAlarm5Mon.AutoSize = true;
+            this.cbAlarm5Mon.Enabled = false;
+            this.cbAlarm5Mon.Location = new System.Drawing.Point(121, 8);
+            this.cbAlarm5Mon.Name = "cbAlarm5Mon";
+            this.cbAlarm5Mon.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm5Mon.TabIndex = 5;
+            this.cbAlarm5Mon.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm5Sun
+            // 
+            this.cbAlarm5Sun.AutoSize = true;
+            this.cbAlarm5Sun.Enabled = false;
+            this.cbAlarm5Sun.Location = new System.Drawing.Point(100, 8);
+            this.cbAlarm5Sun.Name = "cbAlarm5Sun";
+            this.cbAlarm5Sun.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm5Sun.TabIndex = 4;
+            this.cbAlarm5Sun.UseVisualStyleBackColor = true;
+            // 
+            // tbAlarmTime5
+            // 
+            this.tbAlarmTime5.Enabled = false;
+            this.tbAlarmTime5.Location = new System.Drawing.Point(30, 5);
+            this.tbAlarmTime5.Mask = "00:00";
+            this.tbAlarmTime5.Name = "tbAlarmTime5";
+            this.tbAlarmTime5.Size = new System.Drawing.Size(50, 20);
+            this.tbAlarmTime5.TabIndex = 3;
+            this.tbAlarmTime5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cbAlarmEnable5
+            // 
+            this.cbAlarmEnable5.AutoSize = true;
+            this.cbAlarmEnable5.Location = new System.Drawing.Point(7, 8);
+            this.cbAlarmEnable5.Name = "cbAlarmEnable5";
+            this.cbAlarmEnable5.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarmEnable5.TabIndex = 0;
+            this.cbAlarmEnable5.Tag = "4";
+            this.cbAlarmEnable5.UseVisualStyleBackColor = true;
+            this.cbAlarmEnable5.CheckedChanged += new System.EventHandler(this.cbAlarmEnable_CheckedChanged);
+            // 
+            // pnlAlarm6
+            // 
+            this.pnlAlarm6.AccessibleName = "";
+            this.pnlAlarm6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlAlarm6.Controls.Add(this.cbAlarm6Sat);
+            this.pnlAlarm6.Controls.Add(this.cbAlarm6Fri);
+            this.pnlAlarm6.Controls.Add(this.cbAlarm6Thu);
+            this.pnlAlarm6.Controls.Add(this.cbAlarm6Wed);
+            this.pnlAlarm6.Controls.Add(this.cbAlarm6Tue);
+            this.pnlAlarm6.Controls.Add(this.cbAlarm6Mon);
+            this.pnlAlarm6.Controls.Add(this.cbAlarm6Sun);
+            this.pnlAlarm6.Controls.Add(this.tbAlarmTime6);
+            this.pnlAlarm6.Controls.Add(this.cbAlarmEnable6);
+            this.pnlAlarm6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlarm6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlAlarm6.Location = new System.Drawing.Point(0, 150);
+            this.pnlAlarm6.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAlarm6.Name = "pnlAlarm6";
+            this.pnlAlarm6.Size = new System.Drawing.Size(250, 30);
+            this.pnlAlarm6.TabIndex = 5;
+            // 
+            // cbAlarm6Sat
+            // 
+            this.cbAlarm6Sat.AutoSize = true;
+            this.cbAlarm6Sat.Enabled = false;
+            this.cbAlarm6Sat.Location = new System.Drawing.Point(222, 8);
+            this.cbAlarm6Sat.Name = "cbAlarm6Sat";
+            this.cbAlarm6Sat.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm6Sat.TabIndex = 10;
+            this.cbAlarm6Sat.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm6Fri
+            // 
+            this.cbAlarm6Fri.AutoSize = true;
+            this.cbAlarm6Fri.Enabled = false;
+            this.cbAlarm6Fri.Location = new System.Drawing.Point(201, 8);
+            this.cbAlarm6Fri.Name = "cbAlarm6Fri";
+            this.cbAlarm6Fri.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm6Fri.TabIndex = 9;
+            this.cbAlarm6Fri.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm6Thu
+            // 
+            this.cbAlarm6Thu.AutoSize = true;
+            this.cbAlarm6Thu.Enabled = false;
+            this.cbAlarm6Thu.Location = new System.Drawing.Point(183, 8);
+            this.cbAlarm6Thu.Name = "cbAlarm6Thu";
+            this.cbAlarm6Thu.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm6Thu.TabIndex = 8;
+            this.cbAlarm6Thu.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm6Wed
+            // 
+            this.cbAlarm6Wed.AutoSize = true;
+            this.cbAlarm6Wed.Enabled = false;
+            this.cbAlarm6Wed.Location = new System.Drawing.Point(162, 8);
+            this.cbAlarm6Wed.Name = "cbAlarm6Wed";
+            this.cbAlarm6Wed.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm6Wed.TabIndex = 7;
+            this.cbAlarm6Wed.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm6Tue
+            // 
+            this.cbAlarm6Tue.AutoSize = true;
+            this.cbAlarm6Tue.Enabled = false;
+            this.cbAlarm6Tue.Location = new System.Drawing.Point(141, 8);
+            this.cbAlarm6Tue.Name = "cbAlarm6Tue";
+            this.cbAlarm6Tue.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm6Tue.TabIndex = 6;
+            this.cbAlarm6Tue.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm6Mon
+            // 
+            this.cbAlarm6Mon.AutoSize = true;
+            this.cbAlarm6Mon.Enabled = false;
+            this.cbAlarm6Mon.Location = new System.Drawing.Point(121, 8);
+            this.cbAlarm6Mon.Name = "cbAlarm6Mon";
+            this.cbAlarm6Mon.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm6Mon.TabIndex = 5;
+            this.cbAlarm6Mon.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm6Sun
+            // 
+            this.cbAlarm6Sun.AutoSize = true;
+            this.cbAlarm6Sun.Enabled = false;
+            this.cbAlarm6Sun.Location = new System.Drawing.Point(100, 8);
+            this.cbAlarm6Sun.Name = "cbAlarm6Sun";
+            this.cbAlarm6Sun.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm6Sun.TabIndex = 4;
+            this.cbAlarm6Sun.UseVisualStyleBackColor = true;
+            // 
+            // tbAlarmTime6
+            // 
+            this.tbAlarmTime6.Enabled = false;
+            this.tbAlarmTime6.Location = new System.Drawing.Point(30, 5);
+            this.tbAlarmTime6.Mask = "00:00";
+            this.tbAlarmTime6.Name = "tbAlarmTime6";
+            this.tbAlarmTime6.Size = new System.Drawing.Size(50, 20);
+            this.tbAlarmTime6.TabIndex = 3;
+            this.tbAlarmTime6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cbAlarmEnable6
+            // 
+            this.cbAlarmEnable6.AutoSize = true;
+            this.cbAlarmEnable6.Location = new System.Drawing.Point(7, 8);
+            this.cbAlarmEnable6.Name = "cbAlarmEnable6";
+            this.cbAlarmEnable6.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarmEnable6.TabIndex = 0;
+            this.cbAlarmEnable6.Tag = "5";
+            this.cbAlarmEnable6.UseVisualStyleBackColor = true;
+            this.cbAlarmEnable6.CheckedChanged += new System.EventHandler(this.cbAlarmEnable_CheckedChanged);
+            // 
+            // pnlAlarm7
+            // 
+            this.pnlAlarm7.AccessibleName = "";
+            this.pnlAlarm7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlAlarm7.Controls.Add(this.cbAlarm7Sat);
+            this.pnlAlarm7.Controls.Add(this.cbAlarm7Fri);
+            this.pnlAlarm7.Controls.Add(this.cbAlarm7Thu);
+            this.pnlAlarm7.Controls.Add(this.cbAlarm7Wed);
+            this.pnlAlarm7.Controls.Add(this.cbAlarm7Tue);
+            this.pnlAlarm7.Controls.Add(this.cbAlarm7Mon);
+            this.pnlAlarm7.Controls.Add(this.cbAlarm7Sun);
+            this.pnlAlarm7.Controls.Add(this.tbAlarmTime7);
+            this.pnlAlarm7.Controls.Add(this.cbAlarmEnable7);
+            this.pnlAlarm7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlarm7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlAlarm7.Location = new System.Drawing.Point(0, 180);
+            this.pnlAlarm7.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAlarm7.Name = "pnlAlarm7";
+            this.pnlAlarm7.Size = new System.Drawing.Size(250, 30);
+            this.pnlAlarm7.TabIndex = 6;
+            // 
+            // cbAlarm7Sat
+            // 
+            this.cbAlarm7Sat.AutoSize = true;
+            this.cbAlarm7Sat.Enabled = false;
+            this.cbAlarm7Sat.Location = new System.Drawing.Point(222, 8);
+            this.cbAlarm7Sat.Name = "cbAlarm7Sat";
+            this.cbAlarm7Sat.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm7Sat.TabIndex = 10;
+            this.cbAlarm7Sat.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm7Fri
+            // 
+            this.cbAlarm7Fri.AutoSize = true;
+            this.cbAlarm7Fri.Enabled = false;
+            this.cbAlarm7Fri.Location = new System.Drawing.Point(201, 8);
+            this.cbAlarm7Fri.Name = "cbAlarm7Fri";
+            this.cbAlarm7Fri.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm7Fri.TabIndex = 9;
+            this.cbAlarm7Fri.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm7Thu
+            // 
+            this.cbAlarm7Thu.AutoSize = true;
+            this.cbAlarm7Thu.Enabled = false;
+            this.cbAlarm7Thu.Location = new System.Drawing.Point(183, 8);
+            this.cbAlarm7Thu.Name = "cbAlarm7Thu";
+            this.cbAlarm7Thu.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm7Thu.TabIndex = 8;
+            this.cbAlarm7Thu.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm7Wed
+            // 
+            this.cbAlarm7Wed.AutoSize = true;
+            this.cbAlarm7Wed.Enabled = false;
+            this.cbAlarm7Wed.Location = new System.Drawing.Point(162, 8);
+            this.cbAlarm7Wed.Name = "cbAlarm7Wed";
+            this.cbAlarm7Wed.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm7Wed.TabIndex = 7;
+            this.cbAlarm7Wed.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm7Tue
+            // 
+            this.cbAlarm7Tue.AutoSize = true;
+            this.cbAlarm7Tue.Enabled = false;
+            this.cbAlarm7Tue.Location = new System.Drawing.Point(141, 8);
+            this.cbAlarm7Tue.Name = "cbAlarm7Tue";
+            this.cbAlarm7Tue.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm7Tue.TabIndex = 6;
+            this.cbAlarm7Tue.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm7Mon
+            // 
+            this.cbAlarm7Mon.AutoSize = true;
+            this.cbAlarm7Mon.Enabled = false;
+            this.cbAlarm7Mon.Location = new System.Drawing.Point(121, 8);
+            this.cbAlarm7Mon.Name = "cbAlarm7Mon";
+            this.cbAlarm7Mon.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm7Mon.TabIndex = 5;
+            this.cbAlarm7Mon.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm7Sun
+            // 
+            this.cbAlarm7Sun.AutoSize = true;
+            this.cbAlarm7Sun.Enabled = false;
+            this.cbAlarm7Sun.Location = new System.Drawing.Point(100, 8);
+            this.cbAlarm7Sun.Name = "cbAlarm7Sun";
+            this.cbAlarm7Sun.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm7Sun.TabIndex = 4;
+            this.cbAlarm7Sun.UseVisualStyleBackColor = true;
+            // 
+            // tbAlarmTime7
+            // 
+            this.tbAlarmTime7.Enabled = false;
+            this.tbAlarmTime7.Location = new System.Drawing.Point(30, 5);
+            this.tbAlarmTime7.Mask = "00:00";
+            this.tbAlarmTime7.Name = "tbAlarmTime7";
+            this.tbAlarmTime7.Size = new System.Drawing.Size(50, 20);
+            this.tbAlarmTime7.TabIndex = 3;
+            this.tbAlarmTime7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cbAlarmEnable7
+            // 
+            this.cbAlarmEnable7.AutoSize = true;
+            this.cbAlarmEnable7.Location = new System.Drawing.Point(7, 8);
+            this.cbAlarmEnable7.Name = "cbAlarmEnable7";
+            this.cbAlarmEnable7.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarmEnable7.TabIndex = 0;
+            this.cbAlarmEnable7.Tag = "6";
+            this.cbAlarmEnable7.UseVisualStyleBackColor = true;
+            this.cbAlarmEnable7.CheckedChanged += new System.EventHandler(this.cbAlarmEnable_CheckedChanged);
+            // 
+            // pnlAlarm8
+            // 
+            this.pnlAlarm8.AccessibleName = "";
+            this.pnlAlarm8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlAlarm8.Controls.Add(this.cbAlarm8Sat);
+            this.pnlAlarm8.Controls.Add(this.cbAlarm8Fri);
+            this.pnlAlarm8.Controls.Add(this.cbAlarm8Thu);
+            this.pnlAlarm8.Controls.Add(this.cbAlarm8Wed);
+            this.pnlAlarm8.Controls.Add(this.cbAlarm8Tue);
+            this.pnlAlarm8.Controls.Add(this.cbAlarm8Mon);
+            this.pnlAlarm8.Controls.Add(this.cbAlarm8Sun);
+            this.pnlAlarm8.Controls.Add(this.tbAlarmTime8);
+            this.pnlAlarm8.Controls.Add(this.cbAlarmEnable8);
+            this.pnlAlarm8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlarm8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlAlarm8.Location = new System.Drawing.Point(0, 210);
+            this.pnlAlarm8.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAlarm8.Name = "pnlAlarm8";
+            this.pnlAlarm8.Size = new System.Drawing.Size(250, 30);
+            this.pnlAlarm8.TabIndex = 7;
+            // 
+            // cbAlarm8Sat
+            // 
+            this.cbAlarm8Sat.AutoSize = true;
+            this.cbAlarm8Sat.Enabled = false;
+            this.cbAlarm8Sat.Location = new System.Drawing.Point(222, 8);
+            this.cbAlarm8Sat.Name = "cbAlarm8Sat";
+            this.cbAlarm8Sat.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm8Sat.TabIndex = 10;
+            this.cbAlarm8Sat.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm8Fri
+            // 
+            this.cbAlarm8Fri.AutoSize = true;
+            this.cbAlarm8Fri.Enabled = false;
+            this.cbAlarm8Fri.Location = new System.Drawing.Point(201, 8);
+            this.cbAlarm8Fri.Name = "cbAlarm8Fri";
+            this.cbAlarm8Fri.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm8Fri.TabIndex = 9;
+            this.cbAlarm8Fri.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm8Thu
+            // 
+            this.cbAlarm8Thu.AutoSize = true;
+            this.cbAlarm8Thu.Enabled = false;
+            this.cbAlarm8Thu.Location = new System.Drawing.Point(183, 8);
+            this.cbAlarm8Thu.Name = "cbAlarm8Thu";
+            this.cbAlarm8Thu.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm8Thu.TabIndex = 8;
+            this.cbAlarm8Thu.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm8Wed
+            // 
+            this.cbAlarm8Wed.AutoSize = true;
+            this.cbAlarm8Wed.Enabled = false;
+            this.cbAlarm8Wed.Location = new System.Drawing.Point(162, 8);
+            this.cbAlarm8Wed.Name = "cbAlarm8Wed";
+            this.cbAlarm8Wed.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm8Wed.TabIndex = 7;
+            this.cbAlarm8Wed.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm8Tue
+            // 
+            this.cbAlarm8Tue.AutoSize = true;
+            this.cbAlarm8Tue.Enabled = false;
+            this.cbAlarm8Tue.Location = new System.Drawing.Point(141, 8);
+            this.cbAlarm8Tue.Name = "cbAlarm8Tue";
+            this.cbAlarm8Tue.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm8Tue.TabIndex = 6;
+            this.cbAlarm8Tue.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm8Mon
+            // 
+            this.cbAlarm8Mon.AutoSize = true;
+            this.cbAlarm8Mon.Enabled = false;
+            this.cbAlarm8Mon.Location = new System.Drawing.Point(121, 8);
+            this.cbAlarm8Mon.Name = "cbAlarm8Mon";
+            this.cbAlarm8Mon.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm8Mon.TabIndex = 5;
+            this.cbAlarm8Mon.UseVisualStyleBackColor = true;
+            // 
+            // cbAlarm8Sun
+            // 
+            this.cbAlarm8Sun.AutoSize = true;
+            this.cbAlarm8Sun.Enabled = false;
+            this.cbAlarm8Sun.Location = new System.Drawing.Point(100, 8);
+            this.cbAlarm8Sun.Name = "cbAlarm8Sun";
+            this.cbAlarm8Sun.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarm8Sun.TabIndex = 4;
+            this.cbAlarm8Sun.UseVisualStyleBackColor = true;
+            // 
+            // tbAlarmTime8
+            // 
+            this.tbAlarmTime8.Enabled = false;
+            this.tbAlarmTime8.Location = new System.Drawing.Point(30, 5);
+            this.tbAlarmTime8.Mask = "00:00";
+            this.tbAlarmTime8.Name = "tbAlarmTime8";
+            this.tbAlarmTime8.Size = new System.Drawing.Size(50, 20);
+            this.tbAlarmTime8.TabIndex = 3;
+            this.tbAlarmTime8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cbAlarmEnable8
+            // 
+            this.cbAlarmEnable8.AutoSize = true;
+            this.cbAlarmEnable8.Location = new System.Drawing.Point(7, 8);
+            this.cbAlarmEnable8.Name = "cbAlarmEnable8";
+            this.cbAlarmEnable8.Size = new System.Drawing.Size(15, 14);
+            this.cbAlarmEnable8.TabIndex = 0;
+            this.cbAlarmEnable8.Tag = "7";
+            this.cbAlarmEnable8.UseVisualStyleBackColor = true;
+            this.cbAlarmEnable8.CheckedChanged += new System.EventHandler(this.cbAlarmEnable_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 387);
+            this.ClientSize = new System.Drawing.Size(832, 388);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -775,10 +1442,26 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.pnlAlarm1.ResumeLayout(false);
+            this.pnlAlarm1.PerformLayout();
+            this.pnlAlarm2.ResumeLayout(false);
+            this.pnlAlarm2.PerformLayout();
+            this.pnlAlarm3.ResumeLayout(false);
+            this.pnlAlarm3.PerformLayout();
+            this.pnlAlarm4.ResumeLayout(false);
+            this.pnlAlarm4.PerformLayout();
+            this.pnlAlarm5.ResumeLayout(false);
+            this.pnlAlarm5.PerformLayout();
+            this.pnlAlarm6.ResumeLayout(false);
+            this.pnlAlarm6.PerformLayout();
+            this.pnlAlarm7.ResumeLayout(false);
+            this.pnlAlarm7.PerformLayout();
+            this.pnlAlarm8.ResumeLayout(false);
+            this.pnlAlarm8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -811,39 +1494,95 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.MaskedTextBox tbTime;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnCheckComPorts;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel pnlAlarm1;
+        private System.Windows.Forms.MaskedTextBox tbAlarmTime1;
+        private System.Windows.Forms.CheckBox cbAlarmEnable1;
+        private System.Windows.Forms.CheckBox cbAlarm1Sat;
+        private System.Windows.Forms.CheckBox cbAlarm1Fri;
+        private System.Windows.Forms.CheckBox cbAlarm1Thu;
+        private System.Windows.Forms.CheckBox cbAlarm1Wed;
+        private System.Windows.Forms.CheckBox cbAlarm1Tue;
+        private System.Windows.Forms.CheckBox cbAlarm1Mon;
+        private System.Windows.Forms.CheckBox cbAlarm1Sun;
+        private System.Windows.Forms.Panel pnlAlarm2;
+        private System.Windows.Forms.CheckBox cbAlarm2Sat;
+        private System.Windows.Forms.CheckBox cbAlarm2Fri;
+        private System.Windows.Forms.CheckBox cbAlarm2Thu;
+        private System.Windows.Forms.CheckBox cbAlarm2Wed;
+        private System.Windows.Forms.CheckBox cbAlarm2Tue;
+        private System.Windows.Forms.CheckBox cbAlarm2Mon;
+        private System.Windows.Forms.CheckBox cbAlarm2Sun;
+        private System.Windows.Forms.MaskedTextBox tbAlarmTime2;
+        private System.Windows.Forms.CheckBox cbAlarmEnable2;
+        private System.Windows.Forms.Panel pnlAlarm3;
+        private System.Windows.Forms.CheckBox cbAlarm3Sat;
+        private System.Windows.Forms.CheckBox cbAlarm3Fri;
+        private System.Windows.Forms.CheckBox cbAlarm3Thu;
+        private System.Windows.Forms.CheckBox cbAlarm3Wed;
+        private System.Windows.Forms.CheckBox cbAlarm3Tue;
+        private System.Windows.Forms.CheckBox cbAlarm3Mon;
+        private System.Windows.Forms.CheckBox cbAlarm3Sun;
+        private System.Windows.Forms.MaskedTextBox tbAlarmTime3;
+        private System.Windows.Forms.CheckBox cbAlarmEnable3;
+        private System.Windows.Forms.Panel pnlAlarm4;
+        private System.Windows.Forms.CheckBox cbAlarm4Sat;
+        private System.Windows.Forms.CheckBox cbAlarm4Fri;
+        private System.Windows.Forms.CheckBox cbAlarm4Thu;
+        private System.Windows.Forms.CheckBox cbAlarm4Wed;
+        private System.Windows.Forms.CheckBox cbAlarm4Tue;
+        private System.Windows.Forms.CheckBox cbAlarm4Mon;
+        private System.Windows.Forms.CheckBox cbAlarm4Sun;
+        private System.Windows.Forms.MaskedTextBox tbAlarmTime4;
+        private System.Windows.Forms.CheckBox cbAlarmEnable4;
+        private System.Windows.Forms.Panel pnlAlarm5;
+        private System.Windows.Forms.CheckBox cbAlarm5Sat;
+        private System.Windows.Forms.CheckBox cbAlarm5Fri;
+        private System.Windows.Forms.CheckBox cbAlarm5Thu;
+        private System.Windows.Forms.CheckBox cbAlarm5Wed;
+        private System.Windows.Forms.CheckBox cbAlarm5Tue;
+        private System.Windows.Forms.CheckBox cbAlarm5Mon;
+        private System.Windows.Forms.CheckBox cbAlarm5Sun;
+        private System.Windows.Forms.MaskedTextBox tbAlarmTime5;
+        private System.Windows.Forms.CheckBox cbAlarmEnable5;
+        private System.Windows.Forms.Panel pnlAlarm6;
+        private System.Windows.Forms.CheckBox cbAlarm6Sat;
+        private System.Windows.Forms.CheckBox cbAlarm6Fri;
+        private System.Windows.Forms.CheckBox cbAlarm6Thu;
+        private System.Windows.Forms.CheckBox cbAlarm6Wed;
+        private System.Windows.Forms.CheckBox cbAlarm6Tue;
+        private System.Windows.Forms.CheckBox cbAlarm6Mon;
+        private System.Windows.Forms.CheckBox cbAlarm6Sun;
+        private System.Windows.Forms.MaskedTextBox tbAlarmTime6;
+        private System.Windows.Forms.CheckBox cbAlarmEnable6;
+        private System.Windows.Forms.Panel pnlAlarm7;
+        private System.Windows.Forms.CheckBox cbAlarm7Sat;
+        private System.Windows.Forms.CheckBox cbAlarm7Fri;
+        private System.Windows.Forms.CheckBox cbAlarm7Thu;
+        private System.Windows.Forms.CheckBox cbAlarm7Wed;
+        private System.Windows.Forms.CheckBox cbAlarm7Tue;
+        private System.Windows.Forms.CheckBox cbAlarm7Mon;
+        private System.Windows.Forms.CheckBox cbAlarm7Sun;
+        private System.Windows.Forms.MaskedTextBox tbAlarmTime7;
+        private System.Windows.Forms.CheckBox cbAlarmEnable7;
+        private System.Windows.Forms.Panel pnlAlarm8;
+        private System.Windows.Forms.CheckBox cbAlarm8Sat;
+        private System.Windows.Forms.CheckBox cbAlarm8Fri;
+        private System.Windows.Forms.CheckBox cbAlarm8Thu;
+        private System.Windows.Forms.CheckBox cbAlarm8Wed;
+        private System.Windows.Forms.CheckBox cbAlarm8Tue;
+        private System.Windows.Forms.CheckBox cbAlarm8Mon;
+        private System.Windows.Forms.CheckBox cbAlarm8Sun;
+        private System.Windows.Forms.MaskedTextBox tbAlarmTime8;
+        private System.Windows.Forms.CheckBox cbAlarmEnable8;
     }
 }
 
