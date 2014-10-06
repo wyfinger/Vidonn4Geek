@@ -57,7 +57,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.tbTime = new System.Windows.Forms.MaskedTextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbSportData = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -450,9 +450,8 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox5);
+            this.groupBox5.Controls.Add(this.tbSportData);
             this.groupBox5.Controls.Add(this.button8);
-            this.groupBox5.Enabled = false;
             this.groupBox5.Location = new System.Drawing.Point(420, 155);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(402, 224);
@@ -460,13 +459,15 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Sport Data";
             // 
-            // textBox5
+            // tbSportData
             // 
-            this.textBox5.Location = new System.Drawing.Point(6, 51);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(386, 167);
-            this.textBox5.TabIndex = 27;
+            this.tbSportData.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbSportData.Location = new System.Drawing.Point(6, 51);
+            this.tbSportData.Multiline = true;
+            this.tbSportData.Name = "tbSportData";
+            this.tbSportData.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbSportData.Size = new System.Drawing.Size(386, 167);
+            this.tbSportData.TabIndex = 27;
             // 
             // button8
             // 
@@ -476,6 +477,7 @@
             this.button8.TabIndex = 26;
             this.button8.Text = "Read";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button10
             // 
@@ -1495,7 +1497,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.MaskedTextBox tbTime;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbSportData;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnCheckComPorts;
         private System.Windows.Forms.Button button1;

@@ -284,5 +284,22 @@ namespace Vidonn4Geek
             sPLib.Close();
         }
 
+        // Получение спортивных данных, для второй версии прошивки
+        private void button8_Click(object sender, EventArgs e)
+        {
+            tbSportData.Text = "";
+
+            SPLib sPLib = new SPLib();
+            sPLib.MyPortName = cbDevList.Text;
+
+            string[,] sptdata = sPLib.getSptdata();
+            for (int i = 0; i < 168; i++)
+            {
+                tbSportData.Text = tbSportData.Text + sptdata[i, 0] + "\t" + sptdata[i, 1] + ":00:00|" + sptdata[i, 2] + "|" + sptdata[i, 3] + "|" + sptdata[i, 4] + "|0\r\n";
+            }
+
+            sPLib.Close();
+        }
+
     }
 }

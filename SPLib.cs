@@ -599,7 +599,7 @@ namespace ComLib
                         if (array2[7] == "00")   // второй ответ
                         {
                             array[0, 0] = array2[8];
-                            string[] array3 = this.Method9(array2[9]);
+                            string[] array3 = this.HexByte2BiteArr(array2[9]);
                             for (int j = 0; j < 8; j++)
                             {
                                 array[0, j + 1] = array3[j];
@@ -607,7 +607,7 @@ namespace ComLib
                             array[0, 9] = Convert.ToInt32(array2[10], 16).ToString();
                             array[0, 10] = Convert.ToInt32(array2[11], 16).ToString();
                             array[1, 0] = array2[12];
-                            array3 = this.Method9(array2[13]);
+                            array3 = this.HexByte2BiteArr(array2[13]);
                             for (int k = 0; k < 8; k++)
                             {
                                 array[1, k + 1] = array3[k];
@@ -615,7 +615,7 @@ namespace ComLib
                             array[1, 9] = Convert.ToInt32(array2[14], 16).ToString();
                             array[1, 10] = Convert.ToInt32(array2[15], 16).ToString();
                             array[2, 0] = array2[16];
-                            array3 = this.Method9(array2[17]);
+                            array3 = this.HexByte2BiteArr(array2[17]);
                             for (int l = 0; l < 8; l++)
                             {
                                 array[2, l + 1] = array3[l];
@@ -623,7 +623,7 @@ namespace ComLib
                             array[2, 9] = Convert.ToInt32(array2[18], 16).ToString();
                             array[2, 10] = Convert.ToInt32(array2[19], 16).ToString();
                             array[3, 0] = array2[20];
-                            array3 = this.Method9(array2[21]);
+                            array3 = this.HexByte2BiteArr(array2[21]);
                             for (int m = 0; m < 8; m++)
                             {
                                 array[3, m + 1] = array3[m];
@@ -634,7 +634,7 @@ namespace ComLib
                         else               // первый ответ
                         {
                             array[4, 0] = array2[8];
-                            string[] array4 = this.Method9(array2[9]);
+                            string[] array4 = this.HexByte2BiteArr(array2[9]);
                             for (int n = 0; n < 8; n++)
                             {
                                 array[4, n + 1] = array4[n];
@@ -642,7 +642,7 @@ namespace ComLib
                             array[4, 9] = Convert.ToInt32(array2[10], 16).ToString();
                             array[4, 10] = Convert.ToInt32(array2[11], 16).ToString();
                             array[5, 0] = array2[12];
-                            array4 = this.Method9(array2[13]);
+                            array4 = this.HexByte2BiteArr(array2[13]);
                             for (int num = 0; num < 8; num++)
                             {
                                 array[5, num + 1] = array4[num];
@@ -650,7 +650,7 @@ namespace ComLib
                             array[5, 9] = Convert.ToInt32(array2[14], 16).ToString();
                             array[5, 10] = Convert.ToInt32(array2[15], 16).ToString();
                             array[6, 0] = array2[16];
-                            array4 = this.Method9(array2[17]);
+                            array4 = this.HexByte2BiteArr(array2[17]);
                             for (int num2 = 0; num2 < 8; num2++)
                             {
                                 array[6, num2 + 1] = array4[num2];
@@ -658,7 +658,7 @@ namespace ComLib
                             array[6, 9] = Convert.ToInt32(array2[18], 16).ToString();
                             array[6, 10] = Convert.ToInt32(array2[19], 16).ToString();
                             array[7, 0] = array2[20];
-                            array4 = this.Method9(array2[21]);
+                            array4 = this.HexByte2BiteArr(array2[21]);
                             for (int num3 = 0; num3 < 8; num3++)
                             {
                                 array[7, num3 + 1] = array4[num3];
@@ -824,86 +824,86 @@ array3[7]
                     Application.DoEvents();
                 }
                 string parameter = this.ReturnData.Trim();
-                string[] array2 = this.HexStr2HexArr(parameter);
-                string[] array3 = this.Method9(array2[6]);
+                string[] arrAnswer = this.HexStr2HexArr(parameter);
+                string[] arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[6]);
                 for (int i = 0; i < 8; i++)
                 {
-                    array[0, i] = array3[i];
+                    array[0, i] = arrAnswerBite6[i];
                 }
-                array3 = this.Method9(array2[7]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[7]);
                 for (int j = 0; j < 8; j++)
                 {
-                    array[1, j] = array3[j];
+                    array[1, j] = arrAnswerBite6[j];
                 }
-                array3 = this.Method9(array2[8]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[8]);
                 for (int k = 0; k < 8; k++)
                 {
-                    array[2, k] = array3[k];
+                    array[2, k] = arrAnswerBite6[k];
                 }
-                array3 = this.Method9(array2[9]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[9]);
                 for (int l = 0; l < 8; l++)
                 {
-                    array[3, l] = array3[l];
+                    array[3, l] = arrAnswerBite6[l];
                 }
-                array3 = this.Method9(array2[10]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[10]);
                 for (int m = 0; m < 8; m++)
                 {
-                    array[4, m] = array3[m];
+                    array[4, m] = arrAnswerBite6[m];
                 }
-                array3 = this.Method9(array2[11]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[11]);
                 for (int n = 0; n < 8; n++)
                 {
-                    array[5, n] = array3[n];
+                    array[5, n] = arrAnswerBite6[n];
                 }
-                array3 = this.Method9(array2[12]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[12]);
                 for (int num = 0; num < 8; num++)
                 {
-                    array[6, num] = array3[num];
+                    array[6, num] = arrAnswerBite6[num];
                 }
-                array3 = this.Method9(array2[13]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[13]);
                 for (int num2 = 0; num2 < 8; num2++)
                 {
-                    array[7, num2] = array3[num2];
+                    array[7, num2] = arrAnswerBite6[num2];
                 }
-                array3 = this.Method9(array2[14]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[14]);
                 for (int num3 = 0; num3 < 8; num3++)
                 {
-                    array[8, num3] = array3[num3];
+                    array[8, num3] = arrAnswerBite6[num3];
                 }
-                array3 = this.Method9(array2[15]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[15]);
                 for (int num4 = 0; num4 < 8; num4++)
                 {
-                    array[9, num4] = array3[num4];
+                    array[9, num4] = arrAnswerBite6[num4];
                 }
-                array3 = this.Method9(array2[16]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[16]);
                 for (int num5 = 0; num5 < 8; num5++)
                 {
-                    array[10, num5] = array3[num5];
+                    array[10, num5] = arrAnswerBite6[num5];
                 }
-                array3 = this.Method9(array2[17]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[17]);
                 for (int num6 = 0; num6 < 8; num6++)
                 {
-                    array[11, num6] = array3[num6];
+                    array[11, num6] = arrAnswerBite6[num6];
                 }
-                array3 = this.Method9(array2[18]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[18]);
                 for (int num7 = 0; num7 < 8; num7++)
                 {
-                    array[12, num7] = array3[num7];
+                    array[12, num7] = arrAnswerBite6[num7];
                 }
-                array3 = this.Method9(array2[19]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[19]);
                 for (int num8 = 0; num8 < 8; num8++)
                 {
-                    array[13, num8] = array3[num8];
+                    array[13, num8] = arrAnswerBite6[num8];
                 }
-                array3 = this.Method9(array2[20]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[20]);
                 for (int num9 = 0; num9 < 8; num9++)
                 {
-                    array[14, num9] = array3[num9];
+                    array[14, num9] = arrAnswerBite6[num9];
                 }
-                array3 = this.Method9(array2[21]);
+                arrAnswerBite6 = this.HexByte2BiteArr(arrAnswer[21]);
                 for (int num10 = 0; num10 < 8; num10++)
                 {
-                    array[15, num10] = array3[num10];
+                    array[15, num10] = arrAnswerBite6[num10];
                 }
             }
             catch (Exception ex)
@@ -977,13 +977,17 @@ array3[7]
             return result;
         }
 
-        
-        private string[] Method9(string Parameter7)
+        /// <summary>
+        ///     Преобразование байта, заданного как Hex строка в массив бит (строк)
+        /// </summary>
+        /// <param name="hexByte">Байт в виде Hex строки</param>
+        /// <returns></returns>
+        private string[] HexByte2BiteArr(string hexByte)
         {
             string[] array = new string[]  {"0","0","0","0","0","0","0","0"};
             try
             {
-                string text = Convert.ToString(Convert.ToInt32(Parameter7, 16), 2);
+                string text = Convert.ToString(Convert.ToInt32(hexByte, 16), 2);
                 for (int i = 0; i < text.Length; i++)
                 {
                     array[7 - i] = text.Substring(text.Length - 1 - i, 1);
