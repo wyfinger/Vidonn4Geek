@@ -7,3 +7,4 @@ D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.Properti
 D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.csproj.GenerateResource.Cache
 D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.exe
 D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.pdb
+D:\Wyfinger\Projects\C#\Vidonn4Geek\Vidonn4Geek\obj\Release\Vidonn4Geek.csprojResolveAssemblyReference.cache

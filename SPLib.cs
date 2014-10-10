@@ -11,9 +11,7 @@ namespace ComLib
 {
     
     public class SPLib
-    {
-
-        
+    {        
         public struct PersonCfg
         {
             public int weight;
@@ -21,6 +19,15 @@ namespace ComLib
             public bool female;
             public int age;
             public int goal;
+        }
+
+        // Это я нашел в dm.dll
+        public struct LedStat
+        {
+            public bool enable;
+            public bool redOn;
+            public bool greenOn;
+            public bool blueOn;
         }
 
         public SerialPort VSerialPort;
@@ -216,7 +223,7 @@ namespace ComLib
                 mm = Convert.ToInt32(mm, 16).ToString();
                 string ss = text.Substring(24, 2);
                 ss = Convert.ToInt32(ss, 16).ToString();
-                result = string.Concat(new string[]  {yyyy, "-", MM, "-", dd, " ",hh, ":", mm, ":", ss});
+                result = yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss;
             }
             catch (Exception ex)
             {
@@ -254,7 +261,7 @@ namespace ComLib
                 mm = ((mm.Length < 2) ? ("0" + mm) : mm);
                 ss = int.Parse(ss).ToString("X");
                 ss = ((ss.Length < 2) ? ("0" + ss) : ss);
-                string dateTimeStr = string.Concat(new string[] { yy, " ", MM, " ", dd, " ", HH, " ", mm, " ", ss });
+                string dateTimeStr = yy + " " + MM + " " + dd + " " + HH + " " + mm + " " + ss;
 
                 string parameter2 = "AA 81 16 F0 " + this.PrepareHexStr_1(dateTimeStr);
                 this.Send(parameter2);
@@ -347,7 +354,7 @@ namespace ComLib
 
                 string goal_low = goal.Substring(2, 2);
                 string goal_hi = goal.Substring(0, 2);
-                string parameter = string.Concat(new string[] { height, " ", weight, " ", female, " ", age, " ", goal_low, " ", goal_hi });
+                string parameter = height + " " + weight + " " + female + " " + age + " " + goal_low + " " + goal_hi;
                 string parameter2 = "AA 81 13 F0 " + this.PrepareHexStr_1(parameter);
                 this.Send(parameter2);
                 int tickCount = Environment.TickCount;
@@ -373,7 +380,7 @@ namespace ComLib
         ///     Получение идентификационного номера устройства
         /// </summary>
         /// <returns>6 байт в виде hex строки</returns>             
-        public string getBmac()
+        public string GetBmac()
         {
             string result = "";
             try
@@ -402,7 +409,10 @@ namespace ComLib
             return result;
         }
 
-        
+        /// <summary>
+        ///     Получение настроек по сну, видимо. Нужно смотреть на реальном железе.
+        /// </summary>
+        /// <returns>Один байт в виде Hex строки</returns>
         public string GetSitConfig()
         {
             string result = "";
@@ -504,7 +514,10 @@ namespace ComLib
             }
         }
 
-
+        /// <summary>
+        ///     Получение спортивных данных
+        /// </summary>
+        /// <returns>[День] [Час] [Шагов] [Дистанция] [Калорий]</returns>
         public string[,] getSptdata()
         {
             string[,] array = new string[168, 5];
@@ -539,11 +552,11 @@ namespace ComLib
                     {
                         Application.DoEvents();
                     }
-                    string text2 = this.ReturnData.Trim();
-                    if (text2.Length >= 20)
+                    string answer = this.ReturnData.Trim();
+                    if (answer.Length >= 20)
                     {
-                        string[] array2 = this.HexStr2HexArr(text2);
-                        string parameter = text2.Substring(16, 4);
+                        string[] array2 = this.HexStr2HexArr(answer);
+                        string parameter = answer.Substring(16, 4);
                         string text3 = this.Method16(parameter);
                         string s = array2[7].Substring(0, 1);
                         string s2 = array2[7].Substring(1, 1);
@@ -573,6 +586,8 @@ namespace ComLib
             }
             return array;
         }
+
+
 
         /// <summary>
         ///     Получение информации по будильникам
@@ -706,40 +721,9 @@ namespace ComLib
                     text3 = ((text3.Length < 2) ? ("0" + text3) : text3);
                     array3[i] = text3;
                 }
-                string text4 = string.Concat(new string[]
-{
-arrInput[0, 0],
-" ",
-array[0],
-" ",
-array2[0],
-" ",
-array3[0],
-" ",
-arrInput[1, 0],
-" ",
-array[1],
-" ",
-array2[1],
-" ",
-array3[1],
-" ",
-arrInput[2, 0],
-" ",
-array[2],
-" ",
-array2[2],
-" ",
-array3[2],
-" ",
-arrInput[3, 0],
-" ",
-array[3],
-" ",
-array2[3],
-" ",
-array3[3]
-});
+                string text4 = arrInput[0, 0] + " " + array[0] + " " + array2[0] + " " + array3[0] + " " + arrInput[1, 0] + " " + array[1] + " " + array2[1] +
+                    " " + array3[1] + " " + arrInput[2, 0] + " " + array[2] + " " + array2[2] + " " + array3[2] + " " + arrInput[3, 0] + " " + array[3] + " " + array2[3] + " " + array3[3];
+                
                 string parameter = "AA 81 17 F0 " + this.PrepareHexStr_2(text4);
                 this.Send(parameter);
                 int tickCount = Environment.TickCount;
@@ -751,40 +735,9 @@ array3[3]
                 string a = this.ReturnData.Trim();
                 if (a == "AA0117F0000101")
                 {
-                    text4 = string.Concat(new string[]
-{
-arrInput[4, 0],
-" ",
-array[4],
-" ",
-array2[4],
-" ",
-array3[4],
-" ",
-arrInput[5, 0],
-" ",
-array[5],
-" ",
-array2[5],
-" ",
-array3[5],
-" ",
-arrInput[6, 0],
-" ",
-array[6],
-" ",
-array2[6],
-" ",
-array3[6],
-" ",
-arrInput[7, 0],
-" ",
-array[7],
-" ",
-array2[7],
-" ",
-array3[7]
-});
+                    text4 = arrInput[4, 0] + " " + array[4] + " " + array2[4] + " " + array3[4] + " " + arrInput[5, 0] + " " + array[5] + " " + array2[5] + 
+                        " " + array3[5] + " " + arrInput[6, 0] + " " + array[6] + " " + array2[6] + " " + array3[6] + " " + arrInput[7, 0] + " " + array[7] + " " + array2[7] + " " + array3[7];
+
                     parameter = "AA 81 17 F0 " + this.PrepareHexStr_3(text4);
                     this.Send(parameter);
                     tickCount = Environment.TickCount;
@@ -1063,7 +1016,7 @@ array3[7]
             return this.CalcCRC_Two(this.HexStr2ByteArr(text)) + " " + text;
         }
 
-        // Это похоже на функцию дешифрования строк obfuscator-а
+        // Это не obfuscator-а !!!
         private string Method16(string Parameter14)
         {
             string result = "";

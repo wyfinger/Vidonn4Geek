@@ -143,6 +143,12 @@
             this.cbAlarm8Sun = new System.Windows.Forms.CheckBox();
             this.tbAlarmTime8 = new System.Windows.Forms.MaskedTextBox();
             this.cbAlarmEnable8 = new System.Windows.Forms.CheckBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.ledBlue = new System.Windows.Forms.CheckBox();
+            this.ledGreen = new System.Windows.Forms.CheckBox();
+            this.ledRed = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -157,6 +163,7 @@
             this.pnlAlarm6.SuspendLayout();
             this.pnlAlarm7.SuspendLayout();
             this.pnlAlarm8.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -454,7 +461,7 @@
             this.groupBox5.Controls.Add(this.button8);
             this.groupBox5.Location = new System.Drawing.Point(420, 155);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(402, 224);
+            this.groupBox5.Size = new System.Drawing.Size(402, 285);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Sport Data";
@@ -466,7 +473,7 @@
             this.tbSportData.Multiline = true;
             this.tbSportData.Name = "tbSportData";
             this.tbSportData.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbSportData.Size = new System.Drawing.Size(386, 167);
+            this.tbSportData.Size = new System.Drawing.Size(386, 224);
             this.tbSportData.TabIndex = 27;
             // 
             // button8
@@ -1426,11 +1433,86 @@
             this.cbAlarmEnable8.UseVisualStyleBackColor = true;
             this.cbAlarmEnable8.CheckedChanged += new System.EventHandler(this.cbAlarmEnable_CheckedChanged);
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button6);
+            this.groupBox4.Controls.Add(this.button7);
+            this.groupBox4.Controls.Add(this.ledBlue);
+            this.groupBox4.Controls.Add(this.ledGreen);
+            this.groupBox4.Controls.Add(this.ledRed);
+            this.groupBox4.Location = new System.Drawing.Point(12, 386);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(402, 54);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Led Control";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(324, 21);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(72, 23);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "Write";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(246, 21);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(72, 23);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Read";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // ledBlue
+            // 
+            this.ledBlue.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ledBlue.BackColor = System.Drawing.SystemColors.Control;
+            this.ledBlue.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ledBlue.Location = new System.Drawing.Point(162, 19);
+            this.ledBlue.Name = "ledBlue";
+            this.ledBlue.Size = new System.Drawing.Size(50, 26);
+            this.ledBlue.TabIndex = 2;
+            this.ledBlue.Text = "Blue";
+            this.ledBlue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ledBlue.UseVisualStyleBackColor = false;
+            this.ledBlue.CheckedChanged += new System.EventHandler(this.led_CheckedChanged);
+            // 
+            // ledGreen
+            // 
+            this.ledGreen.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ledGreen.BackColor = System.Drawing.SystemColors.Control;
+            this.ledGreen.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ledGreen.Location = new System.Drawing.Point(104, 19);
+            this.ledGreen.Name = "ledGreen";
+            this.ledGreen.Size = new System.Drawing.Size(50, 26);
+            this.ledGreen.TabIndex = 1;
+            this.ledGreen.Text = "Green";
+            this.ledGreen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ledGreen.UseVisualStyleBackColor = false;
+            this.ledGreen.CheckedChanged += new System.EventHandler(this.led_CheckedChanged);
+            // 
+            // ledRed
+            // 
+            this.ledRed.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ledRed.BackColor = System.Drawing.SystemColors.Control;
+            this.ledRed.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ledRed.Location = new System.Drawing.Point(46, 18);
+            this.ledRed.Name = "ledRed";
+            this.ledRed.Size = new System.Drawing.Size(50, 26);
+            this.ledRed.TabIndex = 0;
+            this.ledRed.Text = "Red";
+            this.ledRed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ledRed.UseVisualStyleBackColor = false;
+            this.ledRed.CheckedChanged += new System.EventHandler(this.led_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 388);
+            this.ClientSize = new System.Drawing.Size(832, 450);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
@@ -1464,6 +1546,7 @@
             this.pnlAlarm7.PerformLayout();
             this.pnlAlarm8.ResumeLayout(false);
             this.pnlAlarm8.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1585,6 +1668,12 @@
         private System.Windows.Forms.CheckBox cbAlarm8Sun;
         private System.Windows.Forms.MaskedTextBox tbAlarmTime8;
         private System.Windows.Forms.CheckBox cbAlarmEnable8;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.CheckBox ledBlue;
+        private System.Windows.Forms.CheckBox ledGreen;
+        private System.Windows.Forms.CheckBox ledRed;
     }
 }
 

@@ -93,7 +93,7 @@ namespace Vidonn4Geek
             lblBand.Text = brandName;
 
             // Читаем ID устройства 
-            string devId = sPLib.getBmac();
+            string devId = sPLib.GetBmac();
             lblId.Text = devId;
 
             sPLib.Close();
@@ -274,7 +274,7 @@ namespace Vidonn4Geek
                 arrValues[k, 6] = ((CheckBox)arrAlarms[k, 6]).Checked == true ? "1" : "0";  // Thu
                 arrValues[k, 7] = ((CheckBox)arrAlarms[k, 7]).Checked == true ? "1" : "0";  // Fri
                 arrValues[k, 8] = ((CheckBox)arrAlarms[k, 8]).Checked == true ? "1" : "0";  // Sat
-                arrValues[k, 9] = ((MaskedTextBox)arrAlarms[k, 1]).Text.Substring(0, 2);   // Hour
+                arrValues[k, 9] = ((MaskedTextBox)arrAlarms[k, 1]).Text.Substring(0, 2);    // Hour
                 arrValues[k, 10] = ((MaskedTextBox)arrAlarms[k, 1]).Text.Substring(3, 2);   // Min
             }
  
@@ -287,7 +287,7 @@ namespace Vidonn4Geek
         // Получение спортивных данных, для второй версии прошивки
         private void button8_Click(object sender, EventArgs e)
         {
-            tbSportData.Text = "";
+            tbSportData.Text = "[День] [Час] [Шагов] [Дистанция] [Калорий]\r\n";
 
             SPLib sPLib = new SPLib();
             sPLib.MyPortName = cbDevList.Text;
@@ -297,8 +297,31 @@ namespace Vidonn4Geek
             {
                 tbSportData.Text = tbSportData.Text + sptdata[i, 0] + "\t" + sptdata[i, 1] + ":00:00|" + sptdata[i, 2] + "|" + sptdata[i, 3] + "|" + sptdata[i, 4] + "|0\r\n";
             }
-
             sPLib.Close();
+        }
+
+        private void led_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox led = (CheckBox)sender;
+            if (led.Checked)
+            {
+                // Отщелкним другие светодиодные кнопки
+                foreach (Control control in groupBox4.Controls)
+                {
+                    if ((control.GetType().ToString() == "System.Windows.Forms.CheckBox") && (control.Name != led.Name))
+                    {
+                        ((CheckBox)control).Checked = false;
+                    }
+                }
+
+                if (led.Name == "ledRed") led.BackColor = Color.Red;
+                if (led.Name == "ledGreen") led.BackColor = Color.Green;
+                if (led.Name == "ledBlue") led.BackColor = Color.Blue;
+            }
+            else
+            {
+                led.BackColor = SystemColors.Control;
+            }
         }
 
     }
