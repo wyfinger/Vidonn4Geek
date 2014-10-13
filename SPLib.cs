@@ -34,7 +34,7 @@ namespace ComLib
         public bool IsReciving;
         public string MyPortName = "";
         public string ReturnData = "";
-        private int WaitDelay = 10000; // TODO: изменить на 1000 в релизе !!!!
+        private int WaitDelay = 1000; // TODO: изменить на 1000 в релизе !!!!
 
         public SPLib()
         {
@@ -439,7 +439,7 @@ namespace ComLib
         }
 
         
-        public bool setSitConfig(string sitCfg)
+        public bool SetSitConfig(string sitCfg)
         {
             bool result = false;
             try
@@ -462,6 +462,31 @@ namespace ComLib
             catch
             {
                 result = false;
+            }
+            return result;
+        }
+
+        /// <summary>
+        ///     Получить состояние светодиода, взял из pm.dll, в программе не вроде используется
+        /// </summary>
+        /// <returns>???</returns>
+        public string GetLed()
+        {
+            string result = "";
+            try
+            {
+                this.Send("AA 80 04 F0 00 00");
+                int tickCount = Environment.TickCount;
+                this.IsReciving = true;
+                while (Environment.TickCount - tickCount < this.WaitDelay && this.IsReciving)
+                {
+                    Application.DoEvents();
+                }
+                result = this.ReturnData.Trim();
+            }
+            catch
+            {
+                result = "";
             }
             return result;
         }

@@ -149,6 +149,9 @@
             this.ledBlue = new System.Windows.Forms.CheckBox();
             this.ledGreen = new System.Windows.Forms.CheckBox();
             this.ledRed = new System.Windows.Forms.CheckBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -164,6 +167,7 @@
             this.pnlAlarm7.SuspendLayout();
             this.pnlAlarm8.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -461,7 +465,7 @@
             this.groupBox5.Controls.Add(this.button8);
             this.groupBox5.Location = new System.Drawing.Point(420, 155);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(402, 285);
+            this.groupBox5.Size = new System.Drawing.Size(402, 224);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Sport Data";
@@ -473,7 +477,7 @@
             this.tbSportData.Multiline = true;
             this.tbSportData.Name = "tbSportData";
             this.tbSportData.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbSportData.Size = new System.Drawing.Size(386, 224);
+            this.tbSportData.Size = new System.Drawing.Size(386, 167);
             this.tbSportData.TabIndex = 27;
             // 
             // button8
@@ -1440,6 +1444,7 @@
             this.groupBox4.Controls.Add(this.ledBlue);
             this.groupBox4.Controls.Add(this.ledGreen);
             this.groupBox4.Controls.Add(this.ledRed);
+            this.groupBox4.Enabled = false;
             this.groupBox4.Location = new System.Drawing.Point(12, 386);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(402, 54);
@@ -1507,17 +1512,51 @@
             this.ledRed.UseVisualStyleBackColor = false;
             this.ledRed.CheckedChanged += new System.EventHandler(this.led_CheckedChanged);
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.button11);
+            this.groupBox7.Controls.Add(this.button12);
+            this.groupBox7.Location = new System.Drawing.Point(420, 386);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(402, 54);
+            this.groupBox7.TabIndex = 7;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Test Functions";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(190, 22);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(128, 23);
+            this.button11.TabIndex = 18;
+            this.button11.Text = "pm_getLed()";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(56, 22);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(128, 23);
+            this.button12.TabIndex = 17;
+            this.button12.Text = "GetSitConfig()";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 450);
+            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Viddon X5 for Geek";
             this.groupBox1.ResumeLayout(false);
@@ -1547,6 +1586,7 @@
             this.pnlAlarm8.ResumeLayout(false);
             this.pnlAlarm8.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1674,6 +1714,9 @@
         private System.Windows.Forms.CheckBox ledBlue;
         private System.Windows.Forms.CheckBox ledGreen;
         private System.Windows.Forms.CheckBox ledRed;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }
 

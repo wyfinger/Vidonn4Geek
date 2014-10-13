@@ -324,5 +324,21 @@ namespace Vidonn4Geek
             }
         }
 
+        private void button12_Click(object sender, EventArgs e)
+        {
+            SPLib sPLib = new SPLib();
+            sPLib.MyPortName = cbDevList.Text;
+            tbSportData.Text = tbSportData.Text + "\r\nВызов функции GetSitConfig(), результат:\r\n\t" + sPLib.GetSitConfig();
+            sPLib.Close();            
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            SPLib sPLib = new SPLib();
+            sPLib.MyPortName = cbDevList.Text;
+            tbSportData.Text = tbSportData.Text + "\r\nВызов функции GetLed(), результат:\r\n\t" + sPLib.GetLed();
+            sPLib.Close();   
+        }
+
     }
 }
